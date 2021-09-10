@@ -110,30 +110,10 @@ And download the result.
 
 ## Task 4 Explore multiple genomes - structure
 
-In this task, we are going to compare the structure of multiple genomes in a larger scale.
-
-(It takes a lot of time even between yeast... so still pending)
-
-Link: https://genomevolution.org/r/1bckm
-
-cd /net/fs-1/home01/mariesai/BIO326
-ssa18:72000000-78000000
- /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta
- Brian_pilon_CHR.fasta
-samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta ssa18:72000000-78000000 > Simon.fa
-samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Brian_pilon_CHR.fasta ssa18:72000000-78000000 > Brian.fa
-
-samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta ssa03:74500000-76000000 > fish1.fa
-samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Brian_pilon_CHR.fasta ssa03:74500000-76000000 > fish2.fa
+In this task, we are going to compare the structure of multiple genomes.
+http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html
 
 
 
-Blast
 
-samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta ssa24:6780000-6880000 > fish1.fa
-samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Brian_pilon_CHR.fasta ssa24:6860000-7000000 > fish2.fa
-
-6.78-6.88
-
- blast
  
