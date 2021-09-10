@@ -8,4 +8,15 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+
+### ** Welcome to Bio322 **
+This is a set of introductory hands-on exercises to get to know more about the genomes of various animals with public databases.
+These exercises align the learning goals from module 1 and lectures of Bio322.
+https://www.nmbu.no/course/BIO322
+
+You can submit your answers on Canvas. 
+
+
+### **Index**
+* [Module 1. genome exploration](ensembl1.html)
+
