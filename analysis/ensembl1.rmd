@@ -34,7 +34,8 @@ Click "Ontologies" and "Phenotypes" to explore the reported function of this gen
 
 ![Scroll down to see the transcripts and regulartory regions](assets/handson/Slide6.png)
 
-Here, there are several questions: 
+Here, there are several questions:
+
 ## Question 1 Explore the human genome
 
 - (1-A) What mechanism generates multiple transcripts from one gene?
