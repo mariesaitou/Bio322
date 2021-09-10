@@ -1,0 +1,139 @@
+---
+title: "Bio322.ensembl1"
+author: "Marie Saitou"
+date: "8/23/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+## 0. Introduction
+
+This is a set of introductory hands-on exercises to get to know more about the genomes of various animals with public databases.
+These exercises align the learning goals from module 1 and lectures of Bio322.
+https://www.nmbu.no/course/BIO322
+
+You can submit your answers on Canvas. 
+
+
+## Task 1-1 Explore the human genome content 
+Let's explore actual genome databases and get to know the genome contents and feature.
+
+- Go to https://www.ensembl.org/index.html 
+
+Click the following icon.
+![Let's explore the human genome](assets/handson/Slide2.png)
+
+Here, as one example, we are going to look into BRCA2 gene.
+
+![Investigate the BRCA gene as an example](assets/handson/Slide4.png)
+
+
+![You can see multiple transcripts of the BRCA2 gene](assets/handson/Slide5.png)
+
+Click "Ontologies" and "Phenotypes" to explore the reported function of this gene.
+
+![Scroll down to see the transcripts and regulartory regions](assets/handson/Slide6.png)
+
+Here, there are several questions: 
+## Question 1 Explore the human genome
+
+- (1-A) What mechanism generates multiple transcripts from one gene?
+- (1-B) What is an enhancer, promoter, and transcription factor binding site?
+- (1-C) When you want to know function of a gene, what research plan would you make?
+
+
+
+## Task 1-2 Explore multiple genomes - genome contents
+
+Now, we are going to compare human genome and genomes of other animals. 
+
+Go back to the human genome page, and click "(i) More information and statistics"
+
+![Statistics](assets/handson/Slide3.png)
+
+## Question 2
+- (2-A) How much are the Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in the human genome?
+
+### Similarly, let's explore the genome of
+- Chicken
+- Common carp
+- Saccharomyces cerevisiae (What is its common name??)
+
+and 
+
+- (2-A, continued)  write down: Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in their genomes.
+If you are ambitious, make a plot of these.
+
+
+- (2-B) Why is there variation in genome size and gene numbers? How they have been changed in the process of evolution?
+- (2-C) How do non-coding genes work?
+- (2-D) What are pseudogenes? How are they generated?
+- (2-E) Which species has the most genes? What are the advantages of having many genes? 
+
+
+
+## Task 3 Explore multiple genomes - synteny
+
+In this task, we are going to compare the structure of multiple genomes.
+
+SynCircos is a tool to compare the contents of chromosomes from mulciple species.
+http://bioinfo.konkuk.ac.kr/synteny_portal/
+
+
+First, compare chromosome 1 of human, gorilla, mouse and cow.
+
+![four mammals](assets/handson/circos1.png)
+
+We can see that human and gorilla have a quite similar chromosome one content. 
+
+However, mouse has only one-third of human chromosome one's content, 
+and cow's chromosome one is entirely different from human's.
+
+So, where in the genome do cow and mouse have human chromosome one'e elements?
+
+![four mammals](assets/handson/circos2.png)
+
+
+Let's compare human chromosome one and other chromoosmes of mouse and cow. 
+
+
+![four mammals](assets/handson/circos3.png)
+
+And download the result. 
+![four mammals](assets/handson/circos4.png)
+
+
+
+## Question 3
+- (3-B) Where in the genome do cow and mouse have human chromosome one's elements?
+
+
+## Task 4 Explore multiple genomes - structure
+
+In this task, we are going to compare the structure of multiple genomes in a larger scale.
+
+(It takes a lot of time even between yeast... so still pending)
+
+Link: https://genomevolution.org/r/1bckm
+
+cd /net/fs-1/home01/mariesai/BIO326
+ssa18:72000000-78000000
+ /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta
+ Brian_pilon_CHR.fasta
+samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta ssa18:72000000-78000000 > Simon.fa
+samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Brian_pilon_CHR.fasta ssa18:72000000-78000000 > Brian.fa
+
+samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta ssa03:74500000-76000000 > fish1.fa
+samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Brian_pilon_CHR.fasta ssa03:74500000-76000000 > fish2.fa
+
+
+
+Blast
+
+samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Simon_Final2021_CHR.fasta ssa24:6780000-6880000 > fish1.fa
+samtools faidx /net/cn-1/mnt/SCRATCH/kristenl/Reference/Brian_pilon_CHR.fasta ssa24:6860000-7000000 > fish2.fa
+
+6.78-6.88
+
+ blast
+ 
