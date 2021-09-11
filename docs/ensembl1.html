@@ -384,7 +384,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-09-10
+<strong>Last updated:</strong> 2021-09-11
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -415,16 +415,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4cb2f581427e13972d1437f017649052ba182983targetblank4cb2f58a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/4cb2f581427e13972d1437f017649052ba182983" target="_blank">4cb2f58</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree56697ed916aea718644e723194052eb0d6725866targetblank56697eda"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/56697ed916aea718644e723194052eb0d6725866" target="_blank">56697ed</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4cb2f581427e13972d1437f017649052ba182983targetblank4cb2f58a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree56697ed916aea718644e723194052eb0d6725866targetblank56697eda" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/4cb2f581427e13972d1437f017649052ba182983" target="_blank">4cb2f58</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/56697ed916aea718644e723194052eb0d6725866" target="_blank">56697ed</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -432,6 +432,7 @@ Note that you need to be careful to ensure that all relevant files for the analy
 <pre><code>
 Ignored files:
     Ignored:    .DS_Store
+    Ignored:    .Rhistory
 
 Untracked files:
     Untracked:  Group.csv
@@ -473,6 +474,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/mariesaitou/Bio322/blob/56697ed916aea718644e723194052eb0d6725866/analysis/ensembl1.rmd" target="_blank">56697ed</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-11
+</td>
+<td>
+wflow_publish(“analysis/ensembl1.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/mariesaitou/Bio322/bea42ca304a5d72971e07bccf33a213c4b4af262/docs/ensembl1.html" target="_blank">bea42ca</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-10
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -602,47 +637,37 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 <div id="introduction" class="section level2">
 <h2>0. Introduction</h2>
 <p>This is a set of introductory hands-on exercises to get to know more about the genomes of various animals with public databases. These exercises align the learning goals from module 1 and lectures of Bio322. <a href="https://www.nmbu.no/course/BIO322" class="uri">https://www.nmbu.no/course/BIO322</a></p>
-<p>You can submit your answers on Canvas.</p>
+<p>Relevant chapters: 1, 4, and 6 of the textbook (Introduction to Genomics – 3rd edition. Oxford University Press.).</p>
+<p>Task 4 may take some time for the server to complete the job, so you can start from 4. and can go back to other tasks while the server is processing the analysis.</p>
+<p>You can (don’t have to) write your answers at OneNote. We may pick up some impressive answers next time!</p>
 </div>
-<div id="task-1-1-explore-the-human-genome-content" class="section level2">
-<h2>Task 1-1 Explore the human genome content</h2>
+<div id="task-1.-human-genome" class="section level2">
+<h2>Task 1. Human genome</h2>
 <p>Let’s explore actual genome databases and get to know the genome contents and feature.</p>
 <ul>
 <li>Go to <a href="https://www.ensembl.org/index.html" class="uri">https://www.ensembl.org/index.html</a></li>
 </ul>
 <p>Click the following icon. <img src="assets/handson/Slide2.png" alt="Let’s explore the human genome" /></p>
 <p>Here, as one example, we are going to look into BRCA2 gene.</p>
-<div class="figure">
-<img src="assets/handson/Slide4.png" alt="" />
-<p class="caption">Investigate the BRCA gene as an example</p>
-</div>
-<div class="figure">
-<img src="assets/handson/Slide5.png" alt="" />
-<p class="caption">You can see multiple transcripts of the BRCA2 gene</p>
-</div>
+<p><img src="assets/handson/Slide4.png" alt="Investigate the BRCA gene as an example" /> You can see multiple transcripts of the BRCA2 gene</p>
+<p><img src="assets/handson/Slide5.png" /></p>
 <p>Click “Ontologies” and “Phenotypes” to explore the reported function of this gene.</p>
-<div class="figure">
-<img src="assets/handson/Slide6.png" alt="" />
-<p class="caption">Scroll down to see the transcripts and regulartory regions</p>
+<p>Scroll down to see the transcripts and regulartory regions <img src="assets/handson/Slide6.png" /></p>
+<p>Here, there are several questions about the human genome content:</p>
 </div>
-<p>Here, there are several questions:</p>
-</div>
-<div id="question-1-explore-the-human-genome" class="section level2">
-<h2>Question 1 Explore the human genome</h2>
+<div id="question-1" class="section level2">
+<h2>Question 1</h2>
 <ul>
 <li>(1-A) What mechanism generates multiple transcripts from one gene?</li>
 <li>(1-B) What is an enhancer, promoter, and transcription factor binding site?</li>
 <li>(1-C) When you want to know function of a gene, what research plan would you make?</li>
 </ul>
 </div>
-<div id="task-1-2-explore-multiple-genomes---genome-contents" class="section level2">
-<h2>Task 1-2 Explore multiple genomes - genome contents</h2>
+<div id="task-2.-multiple-genome-contents" class="section level2">
+<h2>Task 2. Multiple genome contents</h2>
 <p>Now, we are going to compare human genome and genomes of other animals.</p>
 <p>Go back to the human genome page, and click “(i) More information and statistics”</p>
-<div class="figure">
-<img src="assets/handson/Slide3.png" alt="" />
-<p class="caption">Statistics</p>
-</div>
+<p><img src="assets/handson/Slide3.png" /></p>
 </div>
 <div id="question-2" class="section level2">
 <h2>Question 2</h2>
@@ -658,7 +683,7 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 </ul>
 <p>and</p>
 <ul>
-<li><p>(2-A, continued) write down: Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in their genomes. If you are ambitious, make a plot of these.</p></li>
+<li><p>(2-A, continued) write down: Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in their genomes.</p></li>
 <li><p>(2-B) Why is there variation in genome size and gene numbers? How they have been changed in the process of evolution?</p></li>
 <li><p>(2-C) How do non-coding genes work?</p></li>
 <li><p>(2-D) What are pseudogenes? How are they generated?</p></li>
@@ -666,38 +691,64 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 </ul>
 </div>
 </div>
-<div id="task-3-explore-multiple-genomes---synteny" class="section level2">
-<h2>Task 3 Explore multiple genomes - synteny</h2>
+<div id="task-3.-synteny" class="section level2">
+<h2>Task 3. Synteny</h2>
 <p>In this task, we are going to compare the structure of multiple genomes.</p>
-<p>SynCircos is a tool to compare the contents of chromosomes from mulciple species. <a href="http://bioinfo.konkuk.ac.kr/synteny_portal/" class="uri">http://bioinfo.konkuk.ac.kr/synteny_portal/</a></p>
-<p>First, compare chromosome 1 of human, gorilla, mouse and cow.</p>
-<div class="figure">
-<img src="assets/handson/circos1.png" alt="" />
-<p class="caption">four mammals</p>
-</div>
-<p>We can see that human and gorilla have a quite similar chromosome one content.</p>
+<p><a href="http://bioinfo.konkuk.ac.kr/synteny_portal/">SynCircos</a> is a tool to compare the contents of chromosomes from multiple species.</p>
+<p>First, compare chromosome one of human, gorilla, mouse and cow.</p>
+<p><img src="assets/handson/circos1.png" /></p>
+<p>You will get a circos1 that compares chromosome one of all the four animals. We can see that human and gorilla have a quite similar chromosome one content.</p>
 <p>However, mouse has only one-third of human chromosome one’s content, and cow’s chromosome one is entirely different from human’s.</p>
 <p>So, where in the genome do cow and mouse have human chromosome one’e elements?</p>
-<div class="figure">
-<img src="assets/handson/circos2.png" alt="" />
-<p class="caption">four mammals</p>
-</div>
-<p>Let’s compare human chromosome one and other chromoosmes of mouse and cow.</p>
-<div class="figure">
-<img src="assets/handson/circos3.png" alt="" />
-<p class="caption">four mammals</p>
-</div>
-<p>And download the result. <img src="assets/handson/circos4.png" alt="four mammals" /></p>
+<p><img src="assets/handson/circos2.png" /></p>
+<p>Let’s compare human chromosome one and chromosomes of mouse and cow.</p>
+<p><img src="assets/handson/circos3.png" /></p>
+<p>And download the result. <img src="assets/handson/circos4.png" /></p>
 </div>
 <div id="question-3" class="section level2">
 <h2>Question 3</h2>
 <ul>
-<li>(3-B) Where in the genome do cow and mouse have human chromosome one’s elements?</li>
+<li>(3-B) Did you successfully get the result? Where in the genome do cow and mouse have human chromosome one’s elements?</li>
 </ul>
 </div>
-<div id="task-4-explore-multiple-genomes---structure" class="section level2">
-<h2>Task 4 Explore multiple genomes - structure</h2>
-<p>In this task, we are going to compare the structure of multiple genomes. <a href="http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html" class="uri">http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html</a></p>
+<div id="task-4.-dotplot" class="section level2">
+<h2>Task 4. Dotplot</h2>
+<p>In this task, we are going to compare the structure of two sequences using “<a href="http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html">pipmaker</a>”.</p>
+<p>Now, we are going to compare two sequences of two fish individuals. You gan get the sequences here:</p>
+<p><a href="assets/handson/fish1.fa">fasta1</a> <a href="assets/handson/fish2.fa">fasta2</a></p>
+<p>You can browse the content of the fasta files in TextEdit or similar software.</p>
+<p>Let’s open PipMaker (from the above webpage) Put the first and second sequence, your email address and “Submit”. Some time after, you will receive an email with results.</p>
+<p>Let’s open “dot.pdf”.</p>
+</div>
+<div id="question-4" class="section level2">
+<h2>Question 4</h2>
+<p>What did you see?? Can you interpret it? What is happening in this genomic region?</p>
+<p>See the instruction of <a href="http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html">pipmaker</a> to explore the data.</p>
+</div>
+<div id="task-5.-gene-gain-and-loss" class="section level2">
+<h2>Task 5. Gene gain and loss</h2>
+<p>Evolutionary analysis of tumore-suppressor genes between species. Cancer is a disease of somatic mutations, and the risk of (reviewed in Tollis et al., 2017, BMC. biol.)</p>
+<p>Elephant has many copies of the key tumore-suppressor gene TP53 (Sulak et al., 2016)</p>
+<p>Let’s explore TP53 in various genomes. Go to <a href="https://www.ensembl.org/index.html" class="uri">https://www.ensembl.org/index.html</a></p>
+<p><a href="https://www.youtube.com/watch?v=bTBLg0bIi98&amp;t=250s">Reference tutorial</a></p>
+<p>First, search “tp53” in the window.</p>
+<p><img src="assets/BIO326-misc/Slide13.png" /></p>
+<p><img src="assets/BIO326-misc/Slide14.png" /></p>
+<p>You will find human TP53 gene. On the left side, under “Comparative Genomics” tubm there is “Gene gain/loss tree” section. Let’s open this. <img src="assets/BIO326-misc/Slide15.png" /></p>
+<p>Then, you will see a phylogenetic tree of various animals, with the number of TP53 genes.You can compare gene gain/loss events in the lineages. The gene number refers to number of paralogous genes, that are originated by gene-duplication events. Humans has tree, TP53, TP63 and TP73.</p>
+<p>You can collapse/reopen subtrees by clicking the circle and triangle.</p>
+</div>
+<div id="question-5" class="section level2">
+<h2>Question 5</h2>
+<ul>
+<li>(Question 5-1) Find humans, nonhuman primates, and elephant. How many TP53 genes does a elephant have?</li>
+<li>(Question 5-2) Find “unusual” species with many more/fewer TP53 genes compared with other species.</li>
+</ul>
+</div>
+<div id="well-done" class="section level2">
+<h2>6. Well done!</h2>
+<p>How did you enjoy the analysis? Let us know if you have questions and comments!</p>
+<p>Next time, we will look into individual genetic differences of human :-)</p>
 </div>
 
 
