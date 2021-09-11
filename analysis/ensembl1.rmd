@@ -12,10 +12,16 @@ This is a set of introductory hands-on exercises to get to know more about the g
 These exercises align the learning goals from module 1 and lectures of Bio322.
 https://www.nmbu.no/course/BIO322
 
-You can submit your answers on Canvas. 
+Relevant chapters: 1, 4, and 6 of the textbook (Introduction to Genomics – 3rd edition. Oxford University Press.). 
+
+Task 4 may take some time for the server to complete the job, so you can start from 4. and can go back to other tasks while the server is processing the analysis.
+
+You can (don't have to) write your answers at OneNote. We may pick up some impressive answers next time!
 
 
-## Task 1-1 Explore the human genome content 
+
+
+## Task 1. Human genome
 Let's explore actual genome databases and get to know the genome contents and feature.
 
 - Go to https://www.ensembl.org/index.html 
@@ -26,17 +32,18 @@ Click the following icon.
 Here, as one example, we are going to look into BRCA2 gene.
 
 ![Investigate the BRCA gene as an example](assets/handson/Slide4.png)
+You can see multiple transcripts of the BRCA2 gene
 
-
-![You can see multiple transcripts of the BRCA2 gene](assets/handson/Slide5.png)
+![](assets/handson/Slide5.png)
 
 Click "Ontologies" and "Phenotypes" to explore the reported function of this gene.
 
-![Scroll down to see the transcripts and regulartory regions](assets/handson/Slide6.png)
+Scroll down to see the transcripts and regulartory regions
+![](assets/handson/Slide6.png)
 
-Here, there are several questions:
+Here, there are several questions about the human genome content:
 
-## Question 1 Explore the human genome
+## Question 1
 
 - (1-A) What mechanism generates multiple transcripts from one gene?
 - (1-B) What is an enhancer, promoter, and transcription factor binding site?
@@ -44,13 +51,13 @@ Here, there are several questions:
 
 
 
-## Task 1-2 Explore multiple genomes - genome contents
+## Task 2. Multiple genome contents
 
 Now, we are going to compare human genome and genomes of other animals. 
 
 Go back to the human genome page, and click "(i) More information and statistics"
 
-![Statistics](assets/handson/Slide3.png)
+![](assets/handson/Slide3.png)
 
 ## Question 2
 - (2-A) How much are the Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in the human genome?
@@ -63,7 +70,7 @@ Go back to the human genome page, and click "(i) More information and statistics
 and 
 
 - (2-A, continued)  write down: Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in their genomes.
-If you are ambitious, make a plot of these.
+
 
 
 - (2-B) Why is there variation in genome size and gene numbers? How they have been changed in the process of evolution?
@@ -72,19 +79,19 @@ If you are ambitious, make a plot of these.
 - (2-E) Which species has the most genes? What are the advantages of having many genes? 
 
 
-
-## Task 3 Explore multiple genomes - synteny
+## Task 3. Synteny
 
 In this task, we are going to compare the structure of multiple genomes.
 
-SynCircos is a tool to compare the contents of chromosomes from mulciple species.
-http://bioinfo.konkuk.ac.kr/synteny_portal/
+[SynCircos](http://bioinfo.konkuk.ac.kr/synteny_portal/) is a tool to compare the contents of chromosomes from multiple species.
 
 
-First, compare chromosome 1 of human, gorilla, mouse and cow.
 
-![four mammals](assets/handson/circos1.png)
+First, compare chromosome one of human, gorilla, mouse and cow.
 
+![](assets/handson/circos1.png)
+
+You will get a circos1 that compares chromosome one of all the four animals.
 We can see that human and gorilla have a quite similar chromosome one content. 
 
 However, mouse has only one-third of human chromosome one's content, 
@@ -92,28 +99,93 @@ and cow's chromosome one is entirely different from human's.
 
 So, where in the genome do cow and mouse have human chromosome one'e elements?
 
-![four mammals](assets/handson/circos2.png)
+![](assets/handson/circos2.png)
 
 
-Let's compare human chromosome one and other chromoosmes of mouse and cow. 
+Let's compare human chromosome one and chromosomes of mouse and cow. 
 
 
-![four mammals](assets/handson/circos3.png)
+![](assets/handson/circos3.png)
 
 And download the result. 
-![four mammals](assets/handson/circos4.png)
+![](assets/handson/circos4.png)
 
 
 
 ## Question 3
-- (3-B) Where in the genome do cow and mouse have human chromosome one's elements?
+- (3-B) Did you successfully get the result? Where in the genome do cow and mouse have human chromosome one's elements?
 
 
-## Task 4 Explore multiple genomes - structure
 
-In this task, we are going to compare the structure of multiple genomes.
-http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html
+## Task 4. Dotplot
 
+In this task, we are going to compare the structure of two sequences using "[pipmaker](http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html)".
+
+
+Now, we are going to compare two sequences of two fish individuals.
+You gan get the sequences here:
+
+[fasta1](assets/handson/fish1.fa)
+[fasta2](assets/handson/fish2.fa)
+
+You can browse the content of the fasta files in TextEdit or similar software.
+
+Let's open PipMaker (from the above webpage)
+Put the first and second sequence, your email address and "Submit".
+Some time after, you will receive an email with results.
+
+Let's open "dot.pdf". 
+
+## Question 4
+What did you see?? Can you interpret it? What is happening in this genomic region? 
+
+See the instruction of [pipmaker](http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html) to explore the data.
+
+
+
+## Task 5. Gene gain and loss
+
+Evolutionary analysis of tumore-suppressor genes between species.
+Cancer is a disease of somatic mutations, and the risk of 
+(reviewed in Tollis et al., 2017, BMC. biol.)
+
+Elephant has many copies of the key tumore-suppressor gene TP53 (Sulak et al., 2016)
+
+
+Let's explore TP53 in various genomes.
+Go to https://www.ensembl.org/index.html
+
+
+  [Reference tutorial](https://www.youtube.com/watch?v=bTBLg0bIi98&t=250s)
+
+First, search "tp53" in the window. 
+
+![](assets/BIO326-misc/Slide13.png)
+
+![](assets/BIO326-misc/Slide14.png)
+
+You will find human TP53 gene. On the left side, under "Comparative Genomics" tubm there is "Gene gain/loss tree" section. Let's open this. 
+![](assets/BIO326-misc/Slide15.png)
+
+
+Then, you will see a phylogenetic tree of various animals, with the number of TP53 genes.You can compare gene gain/loss events in the lineages. The gene number refers to number of paralogous genes, that are originated by gene-duplication events. Humans has tree, TP53, TP63 and TP73.
+
+
+You can collapse/reopen subtrees by clicking the circle and triangle.
+
+
+## Question 5
+
+- (Question 5-1) Find humans, nonhuman primates, and elephant. How many TP53 genes does a elephant have?
+- (Question 5-2) Find "unusual" species with many more/fewer TP53 genes compared with other species.
+
+
+
+## 6. Well done!
+
+How did you enjoy the analysis? Let us know if you have questions and comments!
+
+Next time, we will look into individual genetic differences of human :-) 
 
 
 
