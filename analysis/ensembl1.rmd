@@ -60,12 +60,12 @@ Go back to the human genome page, and click "(i) More information and statistics
 ![](assets/handson/Slide3.png)
 
 ## Question 2
-- (2-A) How much are the Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in the human genome?
+- (2-A) How many are the Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in the human genome?
 
 ### Similarly, let's explore the genome of
 - Chicken
 - Common carp
-- Saccharomyces cerevisiae (What is its common name??)
+- Saccharomyces cerevisiae (What is its common name? Please explore.)
 
 and 
 
@@ -83,6 +83,7 @@ and
 
 In this task, we are going to compare the structure of multiple genomes.
 
+
 [SynCircos](http://bioinfo.konkuk.ac.kr/synteny_portal/) is a tool to compare the contents of chromosomes from multiple species.
 
 
@@ -97,9 +98,7 @@ We can see that human and gorilla have a quite similar chromosome one content.
 However, mouse has only one-third of human chromosome one's content, 
 and cow's chromosome one is entirely different from human's.
 
-So, where in the genome do cow and mouse have human chromosome one'e elements?
-
-![](assets/handson/circos2.png)
+So, where in the genome do cow and mouse have human chromosome one's elements?
 
 
 Let's compare human chromosome one and chromosomes of mouse and cow. 
@@ -122,7 +121,9 @@ And download the result.
 In this task, we are going to compare the structure of two sequences using "[pipmaker](http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html)".
 
 
-Now, we are going to compare two sequences of two fish individuals.
+
+In our research at CIGENE, we are investigating the structure of Atlantic salmon genome. 
+Now, we are going to compare two sequences of two individuals.
 You gan get the sequences here:
 
 [fasta1](assets/handson/fish1.fa)
@@ -149,7 +150,7 @@ Evolutionary analysis of tumore-suppressor genes between species.
 Cancer is a disease of somatic mutations, and the risk of 
 (reviewed in Tollis et al., 2017, BMC. biol.)
 
-Elephant has many copies of the key tumore-suppressor gene TP53 (Sulak et al., 2016)
+Elephant has many copies of the key tumore-suppressor gene TP53 (Sulak et al., 2016, Vazquez and Lynch, 2021)
 
 
 Let's explore TP53 in various genomes.
