@@ -384,7 +384,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-09-11
+<strong>Last updated:</strong> 2021-09-13
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -415,16 +415,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree56697ed916aea718644e723194052eb0d6725866targetblank56697eda"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/56697ed916aea718644e723194052eb0d6725866" target="_blank">56697ed</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree42d2ed26d0234b69efa5a132685a8ce5b72a01f5targetblank42d2ed2a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/42d2ed26d0234b69efa5a132685a8ce5b72a01f5" target="_blank">42d2ed2</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree56697ed916aea718644e723194052eb0d6725866targetblank56697eda" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree42d2ed26d0234b69efa5a132685a8ce5b72a01f5targetblank42d2ed2a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/56697ed916aea718644e723194052eb0d6725866" target="_blank">56697ed</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/42d2ed26d0234b69efa5a132685a8ce5b72a01f5" target="_blank">42d2ed2</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -474,6 +474,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/mariesaitou/Bio322/blob/42d2ed26d0234b69efa5a132685a8ce5b72a01f5/analysis/ensembl1.rmd" target="_blank">42d2ed2</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-13
+</td>
+<td>
+wflow_publish(“analysis/ensembl1.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/mariesaitou/Bio322/dbbc271f16a867b2605dc1b58167e68d5f94f956/docs/ensembl1.html" target="_blank">dbbc271</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-11
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -672,14 +706,14 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 <div id="question-2" class="section level2">
 <h2>Question 2</h2>
 <ul>
-<li>(2-A) How much are the Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in the human genome?</li>
+<li>(2-A) How many are the Base Pairs, Coding genes, Non-coding genes, Pseudogenes, Gene transcripts in the human genome?</li>
 </ul>
 <div id="similarly-lets-explore-the-genome-of" class="section level3">
 <h3>Similarly, let’s explore the genome of</h3>
 <ul>
 <li>Chicken</li>
 <li>Common carp</li>
-<li>Saccharomyces cerevisiae (What is its common name??)</li>
+<li>Saccharomyces cerevisiae (What is its common name? Please explore.)</li>
 </ul>
 <p>and</p>
 <ul>
@@ -699,8 +733,7 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 <p><img src="assets/handson/circos1.png" /></p>
 <p>You will get a circos1 that compares chromosome one of all the four animals. We can see that human and gorilla have a quite similar chromosome one content.</p>
 <p>However, mouse has only one-third of human chromosome one’s content, and cow’s chromosome one is entirely different from human’s.</p>
-<p>So, where in the genome do cow and mouse have human chromosome one’e elements?</p>
-<p><img src="assets/handson/circos2.png" /></p>
+<p>So, where in the genome do cow and mouse have human chromosome one’s elements?</p>
 <p>Let’s compare human chromosome one and chromosomes of mouse and cow.</p>
 <p><img src="assets/handson/circos3.png" /></p>
 <p>And download the result. <img src="assets/handson/circos4.png" /></p>
@@ -714,7 +747,7 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 <div id="task-4.-dotplot" class="section level2">
 <h2>Task 4. Dotplot</h2>
 <p>In this task, we are going to compare the structure of two sequences using “<a href="http://pipmaker.bx.psu.edu/pipmaker/pip-instr.html">pipmaker</a>”.</p>
-<p>Now, we are going to compare two sequences of two fish individuals. You gan get the sequences here:</p>
+<p>In our research at CIGENE, we are investigating the structure of Atlantic salmon genome. Now, we are going to compare two sequences of two individuals. You gan get the sequences here:</p>
 <p><a href="assets/handson/fish1.fa">fasta1</a> <a href="assets/handson/fish2.fa">fasta2</a></p>
 <p>You can browse the content of the fasta files in TextEdit or similar software.</p>
 <p>Let’s open PipMaker (from the above webpage) Put the first and second sequence, your email address and “Submit”. Some time after, you will receive an email with results.</p>
@@ -728,7 +761,7 @@ wflow_publish(“analysis/ensembl1.Rmd”)
 <div id="task-5.-gene-gain-and-loss" class="section level2">
 <h2>Task 5. Gene gain and loss</h2>
 <p>Evolutionary analysis of tumore-suppressor genes between species. Cancer is a disease of somatic mutations, and the risk of (reviewed in Tollis et al., 2017, BMC. biol.)</p>
-<p>Elephant has many copies of the key tumore-suppressor gene TP53 (Sulak et al., 2016)</p>
+<p>Elephant has many copies of the key tumore-suppressor gene TP53 (Sulak et al., 2016, Vazquez and Lynch, 2021)</p>
 <p>Let’s explore TP53 in various genomes. Go to <a href="https://www.ensembl.org/index.html" class="uri">https://www.ensembl.org/index.html</a></p>
 <p><a href="https://www.youtube.com/watch?v=bTBLg0bIi98&amp;t=250s">Reference tutorial</a></p>
 <p>First, search “tp53” in the window.</p>
