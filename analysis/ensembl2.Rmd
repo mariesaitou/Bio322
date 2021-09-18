@@ -1,0 +1,72 @@
+---
+title: "Bio322.ensembl1"
+author: "Marie Saitou"
+date: "8/23/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+## 0. Introduction
+
+This is a set of introductory hands-on exercises to get to know more about human evolutionary and functional genomics with public databases.
+These exercises align with the learning goals from module 1 and lectures of Bio322.
+https://www.nmbu.no/course/BIO322
+
+Relevant chapters: 8 and 9 of the textbook (Introduction to Genomics – 3rd edition. Oxford University Press.). 
+
+
+In this task, we will learn how to investigate the variant's genomic context and its distribution among human populations. Also, we will learn how to search the genome-wide association study reports of a single nucleotide variant.
+
+In this tutorial, we will focus on a single nucleotide variant, ID "rs348195".
+
+## 1. Ensembl Overview
+
+
+Let's search for "rs348195" in [Ensembl](https://www.ensembl.org/index.html). 
+
+You will find a "human variant". Click it.
+
+![](assets/Bio322.09202021/Slide30.png)
+
+Now, you can see that it is an "intron variant at the chromosome1:155698150 (location on the chromosome). This is a polymorphism of A or G, so people have AA, AG, or GG genotypes"
+
+## 2. Genomic context
+
+Now, Let's click "Genomic context". 
+We can see that the variant is in an intronic region of the DAP3 gene.
+
+
+![](assets/Bio322.09202021/Slide32.png)
+
+## 3. Global distribution of the variant
+
+Go back to the previous page and click "population genetics".
+Now you can see the population differentiation of this variant. G type is common in Africa, but rare in other populations.
+
+
+![](assets/Bio322.09202021/Slide31.png)
+
+
+You can check the abbreviations with this table:
+![](assets/Bio322.09202021/Slide33.png)
+
+You can also see a [map](https://popgen.uchicago.edu/ggv/)
+
+
+## 4. Association between a variant and phenotypes
+
+Now, we will learn how to search the genome-wide association study reports of a single nucleotide variant. Let's search for "rs348195" in [GWAS ATLAS](https://atlas.ctglab.nl/PheWAS). 
+
+
+You will see many colorful dots. Each dot shows each phenotype. Y-axis is the -log 10 P-value of the association - the larger the value is, the stronger the statistical association between the phenotype and variant. In this case, if you put your cursor on the top green dot above "30", you will see the top association between this variant (rs348195) and white blood cell count.
+
+![](assets/Bio322.09202021/Slide34.png)
+
+
+Now, if you have time, let's explore another example "rs1543302".
+
+
+
+
+
+
