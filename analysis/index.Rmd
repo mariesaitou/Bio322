@@ -18,5 +18,5 @@ You can submit your answers on Canvas.
 
 
 ### **Index**
-* [Module 1. genome exploration](ensembl1.html)
-
+* [Module 1-1. genome exploration](ensembl1.html)
+* [Module 1-2. human population genomics](ensembl2.html)
