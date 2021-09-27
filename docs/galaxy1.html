@@ -475,16 +475,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4b54a9122666c04942278e9e46498bfdc4f7f511targetblank4b54a91a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/4b54a9122666c04942278e9e46498bfdc4f7f511" target="_blank">4b54a91</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322treec5d33ed673d7b59ae96b1a50c8fe889d5ff02c9ctargetblankc5d33eda"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/c5d33ed673d7b59ae96b1a50c8fe889d5ff02c9c" target="_blank">c5d33ed</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4b54a9122666c04942278e9e46498bfdc4f7f511targetblank4b54a91a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322treec5d33ed673d7b59ae96b1a50c8fe889d5ff02c9ctargetblankc5d33eda" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/4b54a9122666c04942278e9e46498bfdc4f7f511" target="_blank">4b54a91</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/c5d33ed673d7b59ae96b1a50c8fe889d5ff02c9c" target="_blank">c5d33ed</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -554,6 +554,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/mariesaitou/Bio322/blob/c5d33ed673d7b59ae96b1a50c8fe889d5ff02c9c/analysis/galaxy1.Rmd" target="_blank">c5d33ed</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-27
+</td>
+<td>
+wflow_publish(“analysis/galaxy1.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/mariesaitou/Bio322/c3c0bba3cae9f0fefe37f47c06ffdc8fb420a555/docs/galaxy1.html" target="_blank">c3c0bba</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-27
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -681,7 +715,7 @@ wflow_publish(“analysis/galaxy1.Rmd”)
 <div id="filter-lowly-expressed-genes-and-cells" class="section level2">
 <h2>2. Filter lowly-expressed genes and cells</h2>
 <p>First, we want to remove low-quality cell and lowly-expressed genes from the dataset with <strong>Initial processing using RaceID Tool</strong>: (You can search for “RaceID” in the left window.)</p>
-<p><img src="assets/handson/raceID.png" /></p>
+<p><img src="assets/handson/raceID.png" style="width:30.0%" /></p>
 <p>Now, we want to include only:</p>
 <ul>
 <li>Cells with total transcripts are larger than or equal to <strong>3000</strong>.</li>
@@ -732,7 +766,7 @@ wflow_publish(“analysis/galaxy1.Rmd”)
 <summary>
 <strong>Click for result</strong>
 </summary>
-<img src="assets/handson/cluster.png" />
+<img src="assets/handson/cluster.png" style="width:65.0%" />
 </details>
 <p>(Top-Left figure) This may look complicated, but important to understand the significance and the algorithm of clustering. The x-axis shows number of clusters. The algorithm explored how many clusters explain the data best (One cluster, two clusters, three clusters…). The lower the y-value is, the cleaner each cluster is.</p>
 </div>
@@ -743,7 +777,7 @@ wflow_publish(“analysis/galaxy1.Rmd”)
 <summary>
 <strong>Click for result</strong>
 </summary>
-<img src="assets/handson/outlier.png" />
+<img src="assets/handson/outlier.png" style="width:65.0%" />
 </details>
 <p>After outlier detection, several cells were moved to cluster “13” and “14”.</p>
 The heatmap shows the similarlity of gene expression pattern between each cell in each cluster.
@@ -751,7 +785,7 @@ The heatmap shows the similarlity of gene expression pattern between each cell i
 <summary>
 <strong>Click for result</strong>
 </summary>
-<img src="assets/handson/heatmap.png" />
+<img src="assets/handson/heatmap.png" style="width:65.0%" />
 </details>
 </div>
 <div id="marker-genes" class="section level3">
@@ -784,8 +818,7 @@ The heatmap shows the similarlity of gene expression pattern between each cell i
 <p>Let’s see the function of cluster 6 marker genes.</p>
 <p>Go to <a href="http://cbl-gorilla.cs.technion.ac.il/">GOrilla</a> and put the following parameters.</p>
 <p>Step1: Mus musculus Step2: Two unranked lists of genes (target and background lists)<br />
-Step3 Target set: Paste the</p>
-<p>gene names of cluster 11 from the table (Cluster - Genes per Cluster) Background set: “upload a file” and put <a href="assets/handson/GO_mouse.txt">this file</a> which includes all the mouse genes. Step4: Select All Step5: “Search Enriched GO terms”</p>
+Step3 Target set: Paste the gene names of cluster 11 from the table (Cluster - Genes per Cluster) Background set: “upload a file” and put <a href="assets/handson/GO_mouse.txt">this file</a> which includes all the mouse genes. Step4: Select All Step5: “Search Enriched GO terms”</p>
 <p>Explore the results… What biological pathways are enriched in cluster 11 marker genes? What about cluster 6 marker genes?</p>
 </details>
 <details>
@@ -812,7 +845,7 @@ Step3 Target set: Paste the</p>
 <summary>
 <strong>Click for result</strong>
 </summary>
-<img src="assets/handson/network.png" />
+<img src="assets/handson/network.png" style="width:75.0%" />
 </details>
 <ol style="list-style-type: decimal">
 <li>The first panel: the number of links between each cluster and another cluster.</li>
@@ -825,9 +858,13 @@ Step3 Target set: Paste the</p>
 <summary>
 <strong>Click for result</strong>
 </summary>
-<img src="assets/handson/lineage.png" />
+<img src="assets/handson/lineage.png" style="width:75.0%" />
 </details>
-<p>Blue: Higher level of cluster entropy - progenitor cell type Red: Lower level of cluster entropy - mature types Link Width - the number of cells in the cluster Red: Stronger link level Green: Weaker link level</p>
+<p>Blue: Higher level of cluster entropy - progenitor cell type</p>
+<p>Red: Lower level of cluster entropy - mature types</p>
+<p>Link Width - the number of cells in the cluster</p>
+<p>Red: Stronger link level</p>
+<p>Green: Weaker link level</p>
 <p>Cluster 11, 10 and 9 seems to be mature cells, while 2 and 3 seems to be progenitor cells. Cells in cluster 3 have potential to be differentiated to cells in cluster 1, 6, 5, 2, 8 and 4.</p>
 <p>Well done!!!</p>
 <br>
