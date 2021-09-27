@@ -53,7 +53,7 @@ First, we want to remove low-quality cell and lowly-expressed genes from the dat
 
 
 
-![](assets/handson/raceID.png)
+![](assets/handson/raceID.png){width=30%}
 
 Now, we want to include only:
 
@@ -118,7 +118,7 @@ You will get several result files. Let's look at the pdf file.
 
 <details>
   <summary> **Click for result**</summary>      
-![](assets/handson/cluster.png)
+![](assets/handson/cluster.png){width=65%}
 </details> 
 
 (Top-Left figure) This may look complicated, but important to understand the significance and the algorithm of clustering. 
@@ -133,7 +133,7 @@ and the color is corresponding to cluster. The y-axis shows the probability the 
 
 <details>
   <summary> **Click for result**</summary>      
-![](assets/handson/outlier.png)
+![](assets/handson/outlier.png){width=65%}
 </details> 
 
 
@@ -142,7 +142,7 @@ After outlier detection, several cells were moved to cluster "13" and "14".
 The heatmap shows the similarlity of gene expression pattern between each cell in each cluster.
 <details>
   <summary> **Click for result** </summary>      
-![](assets/handson/heatmap.png)
+![](assets/handson/heatmap.png){width=65%}
 </details> 
 
 ### 3-3. Marker genes
@@ -186,9 +186,7 @@ Go to [GOrilla](http://cbl-gorilla.cs.technion.ac.il/) and put the following par
 Step1: Mus musculus
 Step2: Two unranked lists of genes (target and background lists)   
 Step3
-Target set: Paste the 
-
-gene names of cluster 11 from the table (Cluster - Genes per Cluster)
+Target set: Paste the gene names of cluster 11 from the table (Cluster - Genes per Cluster)
 Background set: "upload a file" and put [this file](assets/handson/GO_mouse.txt) which includes all the mouse genes.
 Step4: Select All
 Step5: "Search Enriched GO terms"
@@ -240,7 +238,7 @@ Linage computation using StemID PDF report, page 1.
 
 <details>
   <summary> **Click for result**</summary>      
-![](assets/handson/network.png)
+![](assets/handson/network.png){width=75%}
 </details> 
 
 (1) The first panel: the number of links between each cluster and another cluster. 
@@ -254,13 +252,17 @@ You will see connection between each cluster.
 
 <details>
   <summary> **Click for result**</summary>      
-![](assets/handson/lineage.png)
+![](assets/handson/lineage.png){width=75%}
 </details> 
 
 Blue: Higher level of cluster entropy - progenitor cell type
+
 Red: Lower level of cluster entropy - mature types
+
 Link Width - the number of cells in the cluster
+
 Red: Stronger link level
+
 Green: Weaker link level
 
 
