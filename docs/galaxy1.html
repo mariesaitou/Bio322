@@ -475,16 +475,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322treef5142fa39f28da4e4817a74b8dca9813289e37c4targetblankf5142faa"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/f5142fa39f28da4e4817a74b8dca9813289e37c4" target="_blank">f5142fa</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4b54a9122666c04942278e9e46498bfdc4f7f511targetblank4b54a91a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/mariesaitou/Bio322/tree/4b54a9122666c04942278e9e46498bfdc4f7f511" target="_blank">4b54a91</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322treef5142fa39f28da4e4817a74b8dca9813289e37c4targetblankf5142faa" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4b54a9122666c04942278e9e46498bfdc4f7f511targetblank4b54a91a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/f5142fa39f28da4e4817a74b8dca9813289e37c4" target="_blank">f5142fa</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/mariesaitou/Bio322/tree/4b54a9122666c04942278e9e46498bfdc4f7f511" target="_blank">4b54a91</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -515,6 +515,7 @@ Untracked files:
     Untracked:  main_workflow.ga
     Untracked:  mouse_intestine_scRNAseq.txt
     Untracked:  scrna_tenx.ga
+    Untracked:  ~$Bio322.09272021.pptx
 
 </code></pre>
 <p>
@@ -553,6 +554,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/mariesaitou/Bio322/blob/4b54a9122666c04942278e9e46498bfdc4f7f511/analysis/galaxy1.Rmd" target="_blank">4b54a91</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-27
+</td>
+<td>
+wflow_publish(“analysis/galaxy1.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/mariesaitou/Bio322/849457774fdc16ff6e304c5d4ec13ac2807e41d7/docs/galaxy1.html" target="_blank">8494577</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2021-09-27
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -635,6 +670,7 @@ wflow_publish(“analysis/galaxy1.Rmd”)
 <p>Before you start, If you are not familiar with Galaxy, please explore it. (1.1 and 1.2 in <a href="https://mariesaitou.github.io/Bio326/Bio326.genome.html#1_Galaxy_introduction">this page</a>)</p>
 <p>We will use dataset from this <a href="https://doi.org/10.1016/j.stem.2016.05.010">paper</a> and pipeline from this: <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-raceid/tutorial.html">tutorial</a>. <a href="https://cran.r-project.org/web/packages/RaceID/vignettes/RaceID.html">RaceID</a> is an analytic package for single-cell RNA sequence data sets.</p>
 <p>The data was intestinal stem cells of mice, with the aim of discovering distinct cell sub-populations and deriving a lineage tree between them to find out how these sub-populations relate one another.</p>
+<p>Here is the overview of tasks. Please get back here when you get confused what to do next. <img src="assets/handson/workflow.png" /></p>
 </div>
 <div id="get-the-cell---gene-expression-matrix-data" class="section level2">
 <h2>1. Get the cell - gene expression matrix data</h2>
