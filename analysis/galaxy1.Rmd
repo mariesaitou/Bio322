@@ -1,0 +1,257 @@
+---
+title: "Bio322.galaxy1"
+author: "Marie Saitou"
+date: "9/25/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+## 0. Introduction
+
+This is a set of introductory hands-on exercises to get to know about single-cell RNA sequencing analysis. These exercises align with the learning goals from module 1 and lectures of Bio322.
+https://www.nmbu.no/course/BIO322
+
+
+In this task, we will learn how to analyze transcriptome data at the single-cell level. (1) We will learn cell clustering based on transcriptome, and how to identify marker genes. (2) Also we will identify multipotent progenitor stem cells in the cell clusters.
+
+Before you start,
+If you are not familiar with Galaxy, please explore it.
+(1.1 and 1.2 in [this page](https://mariesaitou.github.io/Bio326/Bio326.genome.html#1_Galaxy_introduction))
+
+
+
+We will use dataset from this [paper](https://doi.org/10.1016/j.stem.2016.05.010) and pipeline from this: [tutorial](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-raceid/tutorial.html). 
+[RaceID](https://cran.r-project.org/web/packages/RaceID/vignettes/RaceID.html) is an analytic package for single-cell RNA sequence data sets.
+
+
+The data was intestinal stem cells of mice, with the aim of discovering distinct cell sub-populations and deriving a lineage tree between them to find out how these sub-populations relate one another.
+
+
+
+## 1. Get the cell - gene expression matrix data
+
+```{bash, eval=FALSE}
+https://zenodo.org/record/1511582/files/intestinalData.tsv
+```
+
+
+Let's explore the data set. 
+![](assets/Bio322.09272021/Slide14.png)
+
+
+You can see the data summary and whole data, by clicking the file name and "eye" icon for each.
+In the dataset, you will see gene names in the first row, and Cell IDs in the first column. The number inside the matrix is the gene expression of each cell.
+
+
+## 2. Filter lowly-expressed genes and cells
+
+First, we want to remove low-quality cell and lowly-expressed genes from the dataset with **Initial processing using RaceID Tool**: 
+(You can search for "RaceID" in the left window.)
+
+
+
+![](assets/handson/raceID.png)
+
+Now, we want to include only:
+
+- Cells with total transcripts are larger than or equal to **3000**.
+- Genes that are with more than **5** expression in more than **5** cells.
+
+### Question 
+How should we set the parameters?
+
+<details>
+  <summary> **Click for answer**</summary>      
+![](assets/handson/task2.png)
+</details> 
+
+
+
+
+In the PDF file (If Galaxy is too slow, you can get the pdf [here](assets/handson/task2.pdf)). We will go over the first three graphs. 
+
+(1) X-axis: log10 Library Size (total number of transcripts per cell)
+
+    Y-axis: Observed number of cells
+(2) X-axis: log10 Feature Set (total number of expressed genes per cell)
+
+    Y-axis: Observed number of cells
+(3) X-axis: log10 Library Size after filtering (cells with minimum 3000 transcripts = library size)
+
+    Y-axis: Observed number of cells
+(4) Total number of expressed genes per cell after filtering
+
+
+### Question 
+How many genes remained?
+How many cells remained?
+
+
+If Galaxy is too slow, you can have a look the result below.
+
+<details>
+  <summary> **Click**</summary>      
+```{bash, eval=FALSE}
+- Source:: genes: 20268 , cells: 431
+- Filter:: genes: 2089 , cells: 287
+         ::  10.3 % of genes remain, 66.6 % of cells remain
+```
+</details> 
+
+
+
+## 3. Clustering 
+
+Here, we want to **group** cells based on gene expression pattern.
+I will explain it when most people get the results of **3**..
+
+Execute "Clustering with Race ID" with default setting on the **RDS** data after filtering (2). You can get the RDS file from [here](assets/handson/RDS.rds)
+
+
+You will get several result files. Let's look at the pdf file. 
+
+
+### 3-1.Clustering method
+
+<details>
+  <summary> **Click for result**</summary>      
+![](assets/handson/cluster.png)
+</details> 
+
+(Top-Left figure) This may look complicated, but important to understand the significance and the algorithm of clustering. 
+The x-axis shows number of clusters. The algorithm explored how many clusters explain the data best (One cluster, two clusters, three clusters...). The lower the y-value is, the cleaner each cluster is.
+
+
+
+### 3-2. Outlier cells
+
+In the pdf, page 2 bottom, you see colorful bars.Each bar represents each cell,
+and the color is corresponding to cluster. The y-axis shows the probability the cell is outlier (shows distinct gene expression pattern within cluster). You see several bars above the threshold (broken line). 
+
+<details>
+  <summary> **Click for result**</summary>      
+![](assets/handson/outlier.png)
+</details> 
+
+
+After outlier detection, several cells were moved to cluster "13" and "14". 
+
+The heatmap shows the similarlity of gene expression pattern between each cell in each cluster.
+<details>
+  <summary> **Click for result**</summary>      
+![](assets/handson/heatmap.png)
+</details> 
+
+### 3-3. Marker genes
+Cluster - Genes per Cluster
+
+
+The heatmaps below show genes that are specifically expressed in certain cluster. For example, Gstm3, St3gal4, Gna11, Krt8 ... show distinct expression pattern from other clusters. 
+
+<details>
+  <summary> **Click for result*</summary>      
+![](assets/handson/gene.cluster.png)
+</details> 
+
+
+You can also see a table with all the marker genes at **Cluster - genes per Cluster**.
+![](assets/Bio322.09272021/Slide16.png)
+
+
+### Question
+Examine marker gene heatmap in cluster11. You will see multiple similar genes that are specifically expressed in cluster 11. That is the function of this gene group?
+
+<details>
+  <summary> **Click for answer**</summary>      
+
+Defa (Defensine Alpha) is antimicrobial and cytotoxic peptides thought to be involved in host defense. [Ref Link](https://www.omim.org/entry/125220?search=defensin%20alpha&highlight=alpha%20defensin)
+
+
+</details> 
+
+## (optional) Gene Ontology analysis
+Gene Ontology analysis: given a set of genes, an enrichment analysis will find which terms are over-represented using functional annotations for that gene set.
+
+![](assets/Bio322.09272021/Slide15.png)
+
+
+
+Let's see the function of cluster 6 marker genes.
+
+Go to [GOrilla](http://cbl-gorilla.cs.technion.ac.il/) and put the following parameters.
+
+Step1: Mus musculus
+Step2: Two unranked lists of genes (target and background lists)   
+Step3
+Target set: Paste the marker gene names of cluster 11 from the table (Cluster - Genes per Cluster)
+Background set: "upload a file" and put [this file](assets/handson/GO_mouse.txt) which includes all the mouse genes.
+Step4: Select All
+Step5: "Search Enriched GO terms"
+
+Explore the results... What biological pathways are enriched in cluster 11 marker genes? What about cluster 6 marker genes?
+
+</details> 
+<details>
+  <summary> **Click for answer**</summary>      
+Cluster 11 marker genes: immunity-related function
+Cluster 6 marker genes: lipid-related function
+
+</details> 
+
+
+## 4. Differential gene expression analysis
+I will explain it when most people get the results of **4 and 5**.
+
+Here, we will learn how to visualize and interpret deferentially expressed genes between cell clusters.
+We can see that cluster 11 looks different from other clusters in both methods.
+
+Now, let's explore
+
+**Cluster Inspection using RaceID**
+Differential Gene Testing: Yes
+
+**Cells in Set A**
+Name of Set: Cells in 1
+Selection method: Cluster Numbers
+List of clusters: 1
+
+**Cells in Set B**
+Name of Set: Cells in 2
+Selection method: Cluster Numbers
+List of clusters: 2
+Use Defaults?: Yes
+
+You will get "MA plot" in the pdf file.
+Here is how to interpret it.
+![](assets/Bio322.09272021/Slide17.png)
+
+
+## 5. Trajectory analysis 
+
+Now, we want to know which cell cluster is the multipotent progenitor stem cells.
+Linage computation using StemID PDF report
+
+
+![](assets/handson/network.png)
+
+
+
+(1) The first panel: the number of links between each cluster and another cluster. 
+(2) The second panel: the “Delta-Entropy” which measures the variability of gene expression values within a cluster
+(3) The third panel: the number of links multiplied by the gene expression variability 
+
+
+<details>
+  <summary> **Click for result**</summary>      
+![](assets/handson/lineage.png)
+</details> 
+
+Blue: Higher level of cluster entropy - progenitor cell type
+Red: Lower level of cluster entropy - mature types
+Link Width - the number of cells in the cluster
+Red: Stronger link level
+Green: Weaker link level
+
+
+
+
