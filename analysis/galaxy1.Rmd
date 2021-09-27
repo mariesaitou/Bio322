@@ -138,7 +138,7 @@ After outlier detection, several cells were moved to cluster "13" and "14".
 
 The heatmap shows the similarlity of gene expression pattern between each cell in each cluster.
 <details>
-  <summary> **Click for result**</summary>      
+  <summary> **Click for result** </summary>      
 ![](assets/handson/heatmap.png)
 </details> 
 
@@ -149,7 +149,7 @@ Cluster - Genes per Cluster
 The heatmaps below show genes that are specifically expressed in certain cluster. For example, Gstm3, St3gal4, Gna11, Krt8 ... show distinct expression pattern from other clusters. 
 
 <details>
-  <summary> **Click for result*</summary>      
+  <summary> **Click for result** </summary>      
 ![](assets/handson/gene.cluster.png)
 </details> 
 
@@ -183,7 +183,9 @@ Go to [GOrilla](http://cbl-gorilla.cs.technion.ac.il/) and put the following par
 Step1: Mus musculus
 Step2: Two unranked lists of genes (target and background lists)   
 Step3
-Target set: Paste the marker gene names of cluster 11 from the table (Cluster - Genes per Cluster)
+Target set: Paste the 
+
+gene names of cluster 11 from the table (Cluster - Genes per Cluster)
 Background set: "upload a file" and put [this file](assets/handson/GO_mouse.txt) which includes all the mouse genes.
 Step4: Select All
 Step5: "Search Enriched GO terms"
@@ -229,17 +231,23 @@ Here is how to interpret it.
 ## 5. Trajectory analysis 
 
 Now, we want to know which cell cluster is the multipotent progenitor stem cells.
-Linage computation using StemID PDF report
+Linage computation using StemID PDF report, page 1.
 
 
+
+<details>
+  <summary> **Click for result**</summary>      
 ![](assets/handson/network.png)
-
-
+</details> 
 
 (1) The first panel: the number of links between each cluster and another cluster. 
 (2) The second panel: the “Delta-Entropy” which measures the variability of gene expression values within a cluster
 (3) The third panel: the number of links multiplied by the gene expression variability 
 
+Overall, cluster 3 is likely to be the multipotent progenitor stem cells with many links and hich gene expression variability.
+
+Linage computation using StemID PDF report, page 3.
+You will see connection between each cluster.
 
 <details>
   <summary> **Click for result**</summary>      
@@ -252,6 +260,12 @@ Link Width - the number of cells in the cluster
 Red: Stronger link level
 Green: Weaker link level
 
+
+Cluster 11, 10 and 9 seems to be mature cells, while 2 and 3 seems to be progenitor cells.
+Cells in cluster 3 have potential to be differentiated to cells in cluster 1, 6, 5, 2, 8 and 4.
+
+
+Well done!!!
 
 
 
