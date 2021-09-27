@@ -27,6 +27,9 @@ We will use dataset from this [paper](https://doi.org/10.1016/j.stem.2016.05.010
 The data was intestinal stem cells of mice, with the aim of discovering distinct cell sub-populations and deriving a lineage tree between them to find out how these sub-populations relate one another.
 
 
+Here is the overview of tasks. Please get back here when you get confused what to do next.
+![](assets/handson/workflow.png)
+
 
 ## 1. Get the cell - gene expression matrix data
 
