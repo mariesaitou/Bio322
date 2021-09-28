@@ -12,7 +12,9 @@ This is a set of introductory hands-on exercises to get to know about single-cel
 https://www.nmbu.no/course/BIO322
 
 
-In this task, we will learn how to analyze transcriptome data at the single-cell level. (1) We will learn cell clustering based on transcriptome, and how to identify marker genes. (2) Also we will identify multipotent progenitor stem cells in the cell clusters.
+In this task, we will learn how to analyze transcriptome data at the single-cell level. (1) We will learn cell clustering based on transcriptome, and how to identify marker genes. (2) Also we will identify multipotent progenitor stem cells in the cell clusters. The initial data matrix is gene expression of intestinal cells including stem cells of mice, but we do not know which cells are progenitor and which cells are mature cells at this point.
+
+
 
 Before you start,
 If you are not familiar with Galaxy, please explore it.
@@ -24,10 +26,9 @@ We will use dataset from this [paper](https://doi.org/10.1016/j.stem.2016.05.010
 [RaceID](https://cran.r-project.org/web/packages/RaceID/vignettes/RaceID.html) is an analytic package for single-cell RNA sequence data sets.
 
 
-The data was intestinal stem cells of mice, with the aim of discovering distinct cell sub-populations and deriving a lineage tree between them to find out how these sub-populations relate one another.
 
 
-Here is the overview of tasks. Please get back here when you get confused what to do next.
+Here is the overview of workflow. Please get back here when you get confused what to do next.
 ![](assets/handson/workflow.png)
 
 
@@ -49,7 +50,7 @@ In the dataset, you will see gene names in the first row, and Cell IDs in the fi
 ## 2. Filter lowly-expressed genes and cells
 
 First, we want to remove low-quality cell and lowly-expressed genes from the dataset with **Initial processing using RaceID Tool**: 
-(You can search for "RaceID" in the left window.)
+(You can search for **RaceID** in the left window.)
 
 
 
@@ -71,7 +72,7 @@ How should we set the parameters?
 
 
 
-In the PDF file (If Galaxy is too slow, you can get the pdf [here](assets/handson/task2.pdf)). We will go over the first three graphs. 
+In the resulting **PDF Report** file (If Galaxy is too slow, you can get the pdf [here](assets/handson/task2.pdf)). We will go over the first three graphs. 
 
 (1) X-axis: log10 Library Size (total number of transcripts per cell)
 
@@ -82,12 +83,15 @@ In the PDF file (If Galaxy is too slow, you can get the pdf [here](assets/handso
 (3) X-axis: log10 Library Size after filtering (cells with minimum 3000 transcripts = library size)
 
     Y-axis: Observed number of cells
+    
 (4) Total number of expressed genes per cell after filtering
 
 
+
 ### Question 
-How many genes remained?
-How many cells remained?
+Let's open the **Metrics** file.
+How many genes remained after filtering?
+How many cells remained after filtering?
 
 
 If Galaxy is too slow, you can have a look the result below.
@@ -108,10 +112,10 @@ If Galaxy is too slow, you can have a look the result below.
 Here, we want to **group** cells based on gene expression pattern.
 I will explain it when most people get the results of **3**..
 
-Execute "Clustering with Race ID" with default setting on the **RDS** data after filtering (2). You can get the RDS file from [here](assets/handson/RDS.rds)
+Execute **Clustering with Race ID** with default setting on the **Initial processing using RaceIR: RDS** data after filtering (2). You can get the RDS file from [here](assets/handson/RDS.rds)
 
 
-You will get several result files. Let's look at the pdf file. 
+You will get several result files. Let's look at the **PDF Report** file. 
 
 
 ### 3-1.Clustering method
@@ -128,7 +132,7 @@ The x-axis shows number of clusters. The algorithm explored how many clusters ex
 
 ### 3-2. Outlier cells
 
-In the pdf, page 2 bottom, you see colorful bars.Each bar represents each cell,
+In the pdf, page 2 bottom, you see colorful bars. Each bar represents each cell,
 and the color is corresponding to cluster. The y-axis shows the probability the cell is outlier (shows distinct gene expression pattern within cluster). You see several bars above the threshold (broken line). 
 
 <details>
@@ -139,15 +143,13 @@ and the color is corresponding to cluster. The y-axis shows the probability the 
 
 After outlier detection, several cells were moved to cluster "13" and "14". 
 
-The heatmap shows the similarlity of gene expression pattern between each cell in each cluster.
+The heatmap shows the similarity of gene expression pattern between each cell in each cluster.
 <details>
   <summary> **Click for result** </summary>      
 ![](assets/handson/heatmap.png){width=65%}
 </details> 
 
 ### 3-3. Marker genes
-Cluster - Genes per Cluster
-
 
 The heatmaps below show genes that are specifically expressed in certain cluster. For example, Gstm3, St3gal4, Gna11, Krt8 ... show distinct expression pattern from other clusters. 
 
@@ -157,7 +159,7 @@ The heatmaps below show genes that are specifically expressed in certain cluster
 </details> 
 
 
-You can also see a table with all the marker genes at **Cluster - genes per Cluster**.
+You can also see and download a table with all the marker genes at **Cluster - genes per Cluster**.
 ![](assets/Bio322.09272021/Slide16.png)
 
 
@@ -184,11 +186,15 @@ Let's see the function of cluster 6 marker genes.
 Go to [GOrilla](http://cbl-gorilla.cs.technion.ac.il/) and put the following parameters.
 
 Step1: Mus musculus
-Step2: Two unranked lists of genes (target and background lists)   
+
+Step2: Two unranked lists of genes (target and background lists)  
+
 Step3
-Target set: Paste the gene names of cluster 11 from the table (Cluster - Genes per Cluster)
+Target set: Paste the gene names of cluster 11 from the table (Cluster - Genes per Cluster). Downlload and open the table, and copy and paste the gene names.
 Background set: "upload a file" and put [this file](assets/handson/GO_mouse.txt) which includes all the mouse genes.
+
 Step4: Select All
+
 Step5: "Search Enriched GO terms"
 
 Explore the results... What biological pathways are enriched in cluster 11 marker genes? What about cluster 6 marker genes?
@@ -196,7 +202,7 @@ Explore the results... What biological pathways are enriched in cluster 11 marke
 </details> 
 <details>
   <summary> **Click for answer**</summary>      
-Cluster 11 marker genes: immunity-related function
+Cluster 11 marker genes: immunity-related function,
 Cluster 6 marker genes: lipid-related function
 
 </details> 
@@ -206,9 +212,7 @@ Cluster 6 marker genes: lipid-related function
 I will explain it when most people get the results of **4 and 5**.
 
 Here, we will learn how to visualize and interpret deferentially expressed genes between cell clusters.
-We can see that cluster 11 looks different from other clusters in both methods.
-
-Now, let's explore
+Now, let's explore the differentially expressed genes between cluster 1 and 2.
 
 **Cluster Inspection using RaceID**
 Differential Gene Testing: Yes
@@ -232,8 +236,7 @@ Here is how to interpret it.
 ## 5. Trajectory analysis 
 
 Now, we want to know which cell cluster is the multipotent progenitor stem cells.
-Linage computation using StemID PDF report, page 1.
-
+Lets conduct **Linage computation using StemID** on the **Clustering using RaceID: RDS**  and see the resulting PDF report, page 1.
 
 
 <details>
@@ -247,8 +250,8 @@ Linage computation using StemID PDF report, page 1.
 
 Overall, cluster 3 is likely to be the multipotent progenitor stem cells with many links and hich gene expression variability.
 
-Linage computation using StemID PDF report, page 3.
-You will see connection between each cluster.
+Now, let's move to page 3.
+You will see the predicted connection between each cluster.
 
 <details>
   <summary> **Click for result**</summary>      
