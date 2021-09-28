@@ -151,7 +151,7 @@ The heatmap shows the similarity of gene expression pattern between each cell in
 
 ### 3-3. Marker genes
 
-The heatmaps below show genes that are specifically expressed in certain cluster. For example, Gstm3, St3gal4, Gna11, Krt8 ... show distinct expression pattern from other clusters. 
+The heatmaps below show genes that are specifically expressed in certain cluster. For example, Gstm3, St3gal4, Gna11, Krt8 ... show distinct expression pattern in cluster 1 from other clusters. 
 
 <details>
   <summary> **Click for result** </summary>      
