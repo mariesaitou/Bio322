@@ -112,7 +112,7 @@ If Galaxy is too slow, you can have a look the result below.
 Here, we want to **group** cells based on gene expression pattern.
 I will explain it when most people get the results of **3**..
 
-Execute **Clustering with Race ID** with default setting on the **Initial processing using RaceIR: RDS** data after filtering (2). You can get the RDS file from [here](assets/handson/RDS.rds)
+Execute **Clustering with Race ID** with default setting on the **Initial processing using RaceID: RDS** data after filtering (2). You can get the RDS file from [here](assets/handson/task2.rdata)
 
 
 You will get several result files. Let's look at the **PDF Report** file. 
