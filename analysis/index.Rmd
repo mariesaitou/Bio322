@@ -9,14 +9,22 @@ editor_options:
 ---
 
 
-### ** Welcome to Bio322 **
+
+
+### **Welcome to Bio322**
 This is a set of introductory hands-on exercises to get to know more about the genomes of various animals with public databases.
 These exercises align the learning goals from module 1 and lectures of Bio322.
 https://www.nmbu.no/course/BIO322
 
 
+### **2022**
+* 10.10.2022 Genome variation and function 1
+* 12.10.2022 Genome variation and function 2
+* 17.10.2022 Genome-wide association study
+* 24.10.2022 Genome variation and evolution
 
-### **Index**
+
+### **2021**
 * [from Module 1-1. Genome exploration](ensembl1.html)
 * [from Module 1-2. Human population genomics](ensembl2.html)
 * [from Module 1-2. RNA sequencing analysis](galaxy1.html)
