@@ -18,7 +18,7 @@ https://www.nmbu.no/course/BIO322
 
 
 ### **2022**
-* 10.10.2022 Genome variation and function 1
+* [10.10.2022 Genome variation and function 1](2022_genome.function1.html)
 * 12.10.2022 Genome variation and function 2
 * 17.10.2022 Genome-wide association study
 * 24.10.2022 Genome variation and evolution
