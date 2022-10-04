@@ -1,0 +1,277 @@
+---
+title: "Genome Browser 2022"
+author: "Marie Saitou"
+date: "4/23/2022"
+output: html_document
+---
+
+
+# Genome variation and function 1
+
+Goal: Today, we learn about how to analyze genetic variants between individuals of the same species.
+
+(1) How to read a "variant call format" (VCF) file
+
+(2) How to investigate the phenotypic effect of variants
+
+
+
+# 1 Variant call format
+
+
+## Interpret a VCF file
+
+
+
+![](assets/Bio322.2022/Slide2.png){width=80%}
+
+[ref: Variant calling format: VCF file](https://towardsdatascience.com/simple-convolution-neural-network-for-genomic-variant-calling-with-tensorflow-c085dbc2026f)
+
+
+
+![](assets/Bio322.2022/Slide3.png){width=80%}
+
+[ref: How to read a VCF file](https://en.wikipedia.org/wiki/Variant_Call_Format)
+
+
+Header with "#" --- information field.
+
+CHROM: chromosome of the variant location
+
+POS: position of the variant
+
+ID: ID of each variant to make it easy to manage
+
+REF: reference allele (the same type as the reference genome)
+
+ALT: alternative allele (the mutant type which is different from the reference genome)
+
+QUAL	FILTER	INFO	FORMAT: variant calling quality and other detail of the variant 
+
+Samples... Genotype. "0" means "reference type", "1" means "alternative type"
+
+
+### Example
+
+(1) The first variant is at chromosome 2, 81170 base.
+
+(2) The first variant's reference allele is C, alternative allele is T. 
+
+(3) For The first variant, Sample1's genotype is C/C, Sample2's is C/C, Sample3's is C/T. 
+
+
+# 2 The effect of genetic variants 
+
+
+![](assets/Bio322.2022/Slide4.png){width=80%}
+
+
+
+You found a genetic variant in your sequenced individual. You want to investigate the potential effect of the variants.
+
+Assume that you found the following deletion polymorphism at in a rabbit genome. 
+
+12: 107,236,296-107,236,969
+
+
+[Go to the Variant Effect Predictor](https://www.ensembl.org/Tools/VEP)
+
+
+Input the following information:
+
+*Species - rabbit (Oryctolagus_cuniculus)*
+
+*Variant - 12 107236296 107236969 DEL + deletion1*
+
+the variant format, left to right ... chromosome, starting point, ending point, kind, strand, variant ID (you can name it as you like) 
+
+Variants.
+
+![](assets/2022_browser/image-04-25-18.48.31.png){width=80%}
+
+
+You can also find various acceptable input formats [here](https://www.ensembl.org/info/docs/tools/vep/vep_formats.html)
+
+
+![](assets/2022_browser/image-04-25-18.53.12.png){width=80%}
+
+The result shows that the deletion is affecting a gene, SLC35F1, by causing coding sequence variant, splice variant, feature truncation and intron variant.
+You can modify the result table by clicking "show/hide columns"
+
+
+
+
+
+Now you found that the variant is overlapping a gene, and you want to know the function of the gene.
+
+Click "ENSOCUG00000015307" to know more about this gene.
+
+Sometimes, gene function information is not well described in non-model species. But in other species such as mouse, the homologous gene function may have been investigated.
+
+In the gene page, you can investigate its evolutionary history and potential function.
+
+
+![](assets/2022_browser/image-04-25-19.10.05.png){width=80%}
+
+## Evolutionary insights
+
+Let's explore "gene gain/loss tree" "Onthologies"and "Phenotypes"
+
+Gene gain/loss tree
+
+![](assets/2022_browser/image-04-25-19.11.48.png){width=80%}
+
+Most of mammalian species have two copies of this gene.
+
+
+![](assets/2022_browser/image-04-25-19.12.04.png){width=80%}
+
+See what is happening in fish!
+
+
+Gene Ontology 
+![](assets/2022_browser/image-04-25-19.12.34.png){width=80%}
+The gene is related to "transmembrane transtport".
+
+
+![](assets/2022_browser/image-04-25-19.13.13.png){width=80%}
+
+Phenotypes. There is no phenotype information for this gene in rabbits, but there are some reports in mouse and rat, such as leukocyte cell number etc.
+
+
+# 3 Hands-on part
+
+Now, you have [a VCF file - click here](assets/sample.vcf) of dogs (Canis_lupus_familiaris). 
+
+
+
+Please explore the genetic variation in the file with the tools above.
+
+
+
+
+## Questions 1
+
+
+Q1-1. How many variants are there in the VCF file?
+
+Q1-2. How many individuals are there in the VCF file?
+
+Q1-3. What is the genotype of sample 1 for variant 1?
+
+Q1-4. What is the reference and alternative alleles of variant 2?
+
+Q1-5. Please describe the genotype frequency of variant 3.
+
+Q1-6. Please describe the allele frequency of variant 15.
+
+
+
+### Result1
+<details>
+  <summary> **Click to display**</summary>      
+  
+A1-1. 15 variants 
+
+A1-2. 18 samples
+
+A1-3. GG
+
+A1-4. Reference: T. Alternative: TAGACACTGTCTACCGAAATGTAGACACTGTCTACCGAAATG
+
+A1-5. 
+
+There are sixteen 0|0, one 0|1 and one 1|1 individuals.
+
+Each genotype frequency is:
+
+G/G:0.056 (1 out of 18) 
+
+G/GGG:0.89 (16 out of 18) 
+
+GGG/GGG:0.056 (1 out of 18)
+
+A1-6.
+
+There are fifteen 0|0, two 0|1 and one 1|1 individuals.
+
+There are 2 * 18 = 36 alleles (each individual has two alleles)
+
+Each allele frequency is:
+
+A allele: 0.89 (15 * 2 + 2 * 1 = 32, 32 our of 36)
+
+G allele: 0.11 (2 * 1 + 1 * 2 = 4, 4 out of 36)
+
+
+</details> 
+
+
+## Questions 2
+
+Q2-1 How many genes were overlapped with submitted variants?
+
+Q2-2 How many variants are overlapped with intronic regions?
+
+Q2-3 How many variants are known, and how many are not reported?
+
+Q2-4 What kind of exonic variants are there?
+
+Q2-5 What are the predicted amino acid changes by the "missense variant" among them? Which exon is it?
+
+
+
+
+### Result2
+<details>
+  <summary> **Click to display**</summary>      
+
+
+A2-1. Three (LCT, SPOPL, UBXN4)
+
+A2-2. Ten variants
+
+A2-3. Nine variants are already reported (existing), and six variants are not reported (novel).
+
+A2-4. inframe_insertion, synonymous_variant, frameshift_variant, missense_variant
+
+A2-5. Q -> R (Glutamine -> Arginine), the 8th of the 17 exons.
+
+
+</details> 
+
+
+
+
+## Questions 3
+
+Q3-1 What is the "ontology" of the LCT gene?
+
+Q3-2 What is the phenotype of the  LCT-deficient rodents?
+
+Q3-3 Do mammalian and non-mammalian species have the same number of the LCT gene?
+
+
+
+
+
+### Result2
+<details>
+  <summary> **Click to display**</summary>      
+  
+Q3-1 What is the "ontology" of the LCT gene?
+
+
+
+Q3-2 What is the phenotype of the  LCT-deficient rodents?
+
+
+
+Q3-3 Do mammalian and non-mammalian species have the same number of the LCT gene?
+
+
+
+
+</details> 
+
+
