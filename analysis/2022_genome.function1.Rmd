@@ -141,7 +141,7 @@ Phenotypes. There is no phenotype information for this gene in rabbits, but ther
 
 # 3 Hands-on part
 
-Now, you have [a VCF file - click here](assets/sample.vcf) of dogs (Canis_lupus_familiaris). 
+Now, you have [a VCF file - click here](assets/2022_browser/sample.vcf) of dogs (Canis_lupus_familiaris). 
 
 
 
@@ -253,24 +253,32 @@ Q3-3 Do mammalian and non-mammalian species have the same number of the LCT gene
 
 
 
-
-
 ### Result2
 <details>
   <summary> **Click to display**</summary>      
   
-Q3-1 What is the "ontology" of the LCT gene?
+
+A3-1 
+
+Molecular function: protein homodimerization activity
+
+Cellular component: plasma membrane
+
+Biological process: metabolic process
 
 
+--- LCT is located in membrane, and contributes to metabolic process with its protein homodimerization activity.
 
-Q3-2 What is the phenotype of the  LCT-deficient rodents?
-
-
-
-Q3-3 Do mammalian and non-mammalian species have the same number of the LCT gene?
+Show/hide columns (1 hidden)
 
 
+A3-2 
 
+Lactose Intolerance, Diarrhea, colitis etc.
+
+A3-3 
+
+Most mammals have one LCT gene. Fish species have variable number of LCT gene, such as eight genes in Bicolor damselfish.
 
 </details> 
 
