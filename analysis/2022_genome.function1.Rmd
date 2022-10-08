@@ -141,7 +141,7 @@ Phenotypes. There is no phenotype information for this gene in rabbits, but ther
 
 # 3 Hands-on part
 
-Now, you have [a VCF file - click here](assets/2022_browser/sample.vcf) of dogs (Canis_lupus_familiaris). 
+Now, you have [a VCF file - click here](assets/Bio322.2022/sample.vcf) of dogs (Canis_lupus_familiaris). 
 
 
 
@@ -167,7 +167,7 @@ Q1-6. Please describe the allele frequency of variant 15.
 
 
 
-### Result1
+### Result 1
 <details>
   <summary> **Click to display**</summary>      
   
@@ -222,7 +222,7 @@ Q2-5 What are the predicted amino acid changes by the "missense variant" among t
 
 
 
-### Result2
+### Result 2
 <details>
   <summary> **Click to display**</summary>      
 
@@ -253,7 +253,7 @@ Q3-3 Do mammalian and non-mammalian species have the same number of the LCT gene
 
 
 
-### Result2
+### Result 3
 <details>
   <summary> **Click to display**</summary>      
   
