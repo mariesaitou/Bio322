@@ -30,6 +30,8 @@ Depends on your interest:
 
 ## 1. Lecture part 
 
+[PDF](/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
+
 
 Prologue - Current topics in genomics 
 
@@ -45,9 +47,7 @@ Challenges of human genomics
 
 
 
-[PDF](/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
 
-/Users/saitoumarie/Dropbox/MyGitHub/MyCourses/Bio322/docs/assets/Bio322.2022/eye.png
 
 ## 2. Hands-on tasks
 
