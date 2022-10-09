@@ -1,0 +1,132 @@
+---
+title: "Genome Browser 2022"
+author: "Marie Saitou"
+date: "4/23/2022"
+output: html_document
+---
+
+
+# Genome variation and function 2
+
+Goal: Today, we learn about how to analyze genetic variants and its association with phenotype.
+
+(1) Genome wide association study - theory
+
+(2) Genome wide association study - browse real data
+
+Relevant review papers if you want to further learn:
+
+[General](https://www.nature.com/articles/s41576-019-0127-1)
+
+Depends on your interest:
+
+[Plant](https://www.nature.com/articles/nrg.2017.82) 
+
+[Animal](https://www.nature.com/articles/s41576-018-0082-2)
+
+[Fish](https://www.nature.com/articles/s41576-020-0227-y)
+
+
+
+## 1. Lecture part [PDF](/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
+
+This is a set of introductory hands-on exercises to get to know more about human evolutionary and functional genomics with public databases.
+
+
+In this task, we will learn how to investigate the variant's genomic context and its distribution among human populations. Also, we will learn how to search the genome-wide association study reports of a single nucleotide variant.
+
+
+
+## 2. Hands-on tasks
+
+
+Now, we will investigate real GWAS data at GWAS ATLAS, which concains 4,756 human GWAS across 3,302 traits.
+
+Let's explore the human GWAS database [GWAS ATLAS](https://atlas.ctglab.nl/). In the tutorial, I did not explain everything, so please explore it yourself and get familiarised with it.
+
+
+## Case study 1
+
+Go to "Browse GWAS" in the top, black bar. And search for the trait about eyesight and see the results.
+
+
+![](/assets/Bio322.2022/eye.png){width=80%}
+
+
+## Questions 1
+
+Q1-1. Examine the Manhattan plot. Where do you see the peak? How can we interpret this? 
+
+Q1-2. See the left table. How many individuals were investigated?
+
+Q1-3. How many variants were investigated?
+
+Q1-4. See the bottom Manhattan plot with gene annotations. What is the top-associated gene?
+
+Q1-5. (Discuss within groups) - Do some literature search about the top-associated gene and assume how this gene is associated with the trait, "Reason for glasses/contact lenses: For short-sightedness".
+
+
+### Result 1
+<details>
+  <summary> **Click to display**</summary>      
+  
+https://atlas.ctglab.nl/traitDB/3539
+
+A1-1. There are multiple peaks, in the chromosomes 1, 2, 4, 6, 8, 10, 15...  The obserbation implies that multiple loci are associated with this trait (The trait is polygenic).
+
+A1-2. 78647 samples (See the left box, "N")
+
+A1-3. 9223534 SNPs (See the left box, "Nshps")
+
+A1-4. Reference: T. Alternative: TAGACACTGTCTACCGAAATGTAGACACTGTCTACCGAAATG
+
+A1-5. Discuss within groups.
+
+</details> 
+
+
+## Case study 2
+
+Go to "Browse GWAS" in the top, black bar. And search for the trait about hair morphology and see the results.
+
+
+![](/assets/Bio322.2022/hair.png){width=80%}
+
+## Questions 2
+
+Q2-1. Examine the Manhattan plot. Where do you see the peak? How can we interpret this? 
+
+Q2-2. See the left table. How many individuals were investigated?
+
+Q2-3. How many variants were investigated?
+
+Q2-4. See the table under the Manhattan plot with gene annotations. What is the ID of top-associated SNP? (SNP ID: rsXXXXX)
+
+Q2-5. Discuss within the groups - Go to [GGV map browser](https://popgen.uchicago.edu/ggv/) and enter the SNP ID above to see the global distribution of this variant. "A" is the straight hair allele, and "G" is the curly hair allele. What can we estimate from the map?
+
+
+
+
+
+### Result 2
+<details>
+  <summary> **Click to display**</summary>      
+
+https://atlas.ctglab.nl/traitDB/4023
+
+
+A2-1. There is one big peak at chromosome 2. It is plausible that one genetic factor with very strong effect is associated with this trait.
+
+A2-2. 4878 individuals
+
+A2-3. 560921 SNPs
+
+A2-4. rs260643 
+
+A2-5. Discuss within groups. 
+
+</details> 
+
+
+
+
