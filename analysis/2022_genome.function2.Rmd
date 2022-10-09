@@ -1,7 +1,7 @@
 ---
 title: "Genome Browser 2022"
 author: "Marie Saitou"
-date: "4/23/2022"
+date: "10/09/2022"
 output: html_document
 ---
 
@@ -47,7 +47,7 @@ Challenges of human genomics
 
 [PDF](/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
 
-
+/Users/saitoumarie/Dropbox/MyGitHub/MyCourses/Bio322/docs/assets/Bio322.2022/eye.png
 
 ## 2. Hands-on tasks
 
@@ -62,7 +62,7 @@ Let's explore the human GWAS database [GWAS ATLAS](https://atlas.ctglab.nl/). In
 Go to "Browse GWAS" in the top, black bar. And search for the trait about eyesight and see the results.
 
 
-![](/assets/Bio322.2022/eye.png){width=80%}
+![](/assets/Bio322.2022/eye.png)
 
 
 ## Questions 1
@@ -102,7 +102,8 @@ A1-5. Discuss within groups.
 Go to "Browse GWAS" in the top, black bar. And search for the trait about hair morphology and see the results.
 
 
-![](/assets/Bio322.2022/hair.png){width=80%}
+![](/assets/Bio322.2022/hair.png)
+
 
 ## Questions 2
 
