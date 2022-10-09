@@ -62,7 +62,7 @@ Let's explore the human GWAS database [GWAS ATLAS](https://atlas.ctglab.nl/). In
 Go to "Browse GWAS" in the top, black bar. And search for the trait about eyesight and see the results.
 
 
-![](/assets/Bio322.2022/eye.png)
+![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/eye.png)
 
 
 ## Questions 1
@@ -102,7 +102,7 @@ A1-5. Discuss within groups.
 Go to "Browse GWAS" in the top, black bar. And search for the trait about hair morphology and see the results.
 
 
-![](/assets/Bio322.2022/hair.png)
+![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/hair.png)
 
 
 ## Questions 2
