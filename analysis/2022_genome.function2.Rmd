@@ -104,7 +104,7 @@ In this paper, they generated a knock-in mouse model to investigate the function
 
 
 
-## Case study 1
+## Case study 2
 
 Go to "Browse GWAS" in the top, black bar. And search for the trait about eyesight and see the results.
 
@@ -125,7 +125,7 @@ Q2-4. See the bottom Manhattan plot with gene annotations. What is the top-assoc
 Q2-5. (Discussion topic) - Do some literature search about the top-associated genes and assume how this gene is associated with the trait, "Reason for glasses/contact lenses: For short-sightedness". To further understand the mechanism, what experiment would you plan?
 
 
-### Result 1
+### Result 2
 <details>
   <summary> **Click to display**</summary>      
   
@@ -144,7 +144,5 @@ A2-5. Put what you have discussed on CANVAS "Discussion" with the full names of 
 </details> 
 
 
-
-## Discussion topic
 
 
