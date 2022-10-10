@@ -30,7 +30,7 @@ Depends on your interest:
 
 ## 1. Lecture part 
 
-[PDF](/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
+[PDF](https://github.com/mariesaitou/Bio322/blob/master/docs/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
 
 
 Prologue - Current topics in genomics 
@@ -43,9 +43,7 @@ We will learn about:
 
 Methods and significance of functional genomics
 
-Challenges of human genomics
-
-
+Challenges of genomics
 
 
 
@@ -57,12 +55,14 @@ Now, we will investigate real GWAS data at GWAS ATLAS, which concains 4,756 huma
 Let's explore the human GWAS database [GWAS ATLAS](https://atlas.ctglab.nl/). In the tutorial, I did not explain everything, so please explore it yourself and get familiarised with it.
 
 
+
+
 ## Case study 1
 
-Go to "Browse GWAS" in the top, black bar. And search for the trait about eyesight and see the results.
+Go to "Browse GWAS" in the top, black bar. And search for the trait about hair morphology and see the results.
 
 
-![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/eye.png)
+![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/hair.png)
 
 
 ## Questions 1
@@ -73,36 +73,43 @@ Q1-2. See the left table. How many individuals were investigated?
 
 Q1-3. How many variants were investigated?
 
-Q1-4. See the bottom Manhattan plot with gene annotations. What is the top-associated gene?
+Q1-4. See the table under the Manhattan plot with gene annotations. What is the ID of top-associated SNP? (SNP ID: rsXXXXX)
 
-Q1-5. (Discuss within groups) - Do some literature search about the top-associated gene and assume how this gene is associated with the trait, "Reason for glasses/contact lenses: For short-sightedness".
+Q2-5.  Go to [GGV map browser](https://popgen.uchicago.edu/ggv/) and enter the SNP ID above to see the global distribution of this variant. "A" is the straight hair allele, and "G" is the curly hair allele. What can we estimate from this map? Why did it happen?
+
 
 
 ### Result 1
 <details>
   <summary> **Click to display**</summary>      
-  
-https://atlas.ctglab.nl/traitDB/3539
 
-A1-1. There are multiple peaks, in the chromosomes 1, 2, 4, 6, 8, 10, 15...  The obserbation implies that multiple loci are associated with this trait (The trait is polygenic).
+https://atlas.ctglab.nl/traitDB/4023
 
-A1-2. 78647 samples (See the left box, "N")
 
-A1-3. 9223534 SNPs (See the left box, "Nshps")
+A1-1. There is one big peak at chromosome 2. It is plausible that one genetic factor with very strong effect is associated with this trait.
 
-A1-4. Reference: T. Alternative: TAGACACTGTCTACCGAAATGTAGACACTGTCTACCGAAATG
+A1-2. 4878 individuals
 
-A1-5. Discuss within groups.
+A1-3. 560921 SNPs
+
+A1-4. rs260643 
+
+A1-5. Straight hair type is thought to be adaptive in East Asia in human evolution. Why? There are a lot of theory but there is not a concrete consensus yet. 
+
+[if you are interested](https://www.sciencedirect.com/science/article/pii/S0092867413000676)
+In this paper, they generated a knock-in mouse model to investigate the function of hair-morphology altering variant. In the mouce model, they observed increased hair thickness, but also change the morphology of mammary and eccrine glands.
 
 </details> 
 
 
-## Case study 2
-
-Go to "Browse GWAS" in the top, black bar. And search for the trait about hair morphology and see the results.
 
 
-![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/hair.png)
+## Case study 1
+
+Go to "Browse GWAS" in the top, black bar. And search for the trait about eyesight and see the results.
+
+
+![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/eye.png)
 
 
 ## Questions 2
@@ -113,33 +120,31 @@ Q2-2. See the left table. How many individuals were investigated?
 
 Q2-3. How many variants were investigated?
 
-Q2-4. See the table under the Manhattan plot with gene annotations. What is the ID of top-associated SNP? (SNP ID: rsXXXXX)
+Q2-4. See the bottom Manhattan plot with gene annotations. What is the top-associated gene?
 
-Q2-5. Discuss within the groups - Go to [GGV map browser](https://popgen.uchicago.edu/ggv/) and enter the SNP ID above to see the global distribution of this variant. "A" is the straight hair allele, and "G" is the curly hair allele. What can we estimate from the map?
-
-
+Q2-5. (Discussion topic) - Do some literature search about the top-associated genes and assume how this gene is associated with the trait, "Reason for glasses/contact lenses: For short-sightedness". To further understand the mechanism, what experiment would you plan?
 
 
-
-### Result 2
+### Result 1
 <details>
   <summary> **Click to display**</summary>      
+  
+https://atlas.ctglab.nl/traitDB/3539
 
-https://atlas.ctglab.nl/traitDB/4023
+A2-1. There are multiple peaks, in the chromosomes 1, 2, 4, 6, 8, 10, 15...  The obserbation implies that multiple loci are associated with this trait (The trait is polygenic).
 
+A2-2. 78647 samples (See the left box, "N")
 
-A2-1. There is one big peak at chromosome 2. It is plausible that one genetic factor with very strong effect is associated with this trait.
+A2-3. 9223534 SNPs (See the left box, "Nsnps")
 
-A2-2. 4878 individuals
+A2-4. PRSS56 (the dot with lowest P-value = highest -log10P value)
 
-A2-3. 560921 SNPs
-
-A2-4. rs260643 
-
-A2-5. Discuss within groups. 
-
+A2-5. Put what you have discussed on CANVAS "Discussion" with the full names of participants who contributed to the discussion. 
+ 
 </details> 
 
 
+
+## Discussion topic
 
 
