@@ -78,7 +78,7 @@ Go to [PheWAS](https://atlas.ctglab.nl/PheWAS) and enter the SNP ID above (rs217
 Q1-7 
 Discuss how the lower expression of ADH1C (Alcohol Dehydrogenase 1C) is associated with higher alcohol intake (you don't have to submit it).
 
-[Reading material](https://atlas.ctglab.nl/PheWAS)
+[Reading material](https://pubs.niaaa.nih.gov/publications/aa72/aa72.htm)
 
 
 
