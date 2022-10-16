@@ -20,7 +20,7 @@ https://www.nmbu.no/course/BIO322
 ### **2022**
 * [10.10.2022 Genome variation and function 1](2022_genome.function1.html)
 * [12.10.2022 GWAS theory and interpretation](2022_genome.function2.html)
-* 17.10.2022 eQTL theory and interpretation
+* [17.10.2022 eQTL theory and interpretation](2022_genome.function3.html)
 
 
 ### **2021**
