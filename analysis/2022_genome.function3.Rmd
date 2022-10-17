@@ -39,15 +39,15 @@ Go to "GTEx" in the top, black bar. And search for the gene "ADH1C (Alcohol Dehy
 
 ## Questions 1
 
-Q1-1. See "Bulk tissue gene expression". Where is the ADH1C gene highly expressed? 
+*Q1-1.* See "Bulk tissue gene expression". Where is the ADH1C gene highly expressed? 
 
-Q1-2. Search for the ADH1A and ADH1B as well. Are their expression pattern different from ADH1C? How does it happen? (Remember Simen's module1)
+*Q1-2.* Search for the ADH1A and ADH1B as well. Are their expression pattern different from ADH1C? How does it happen? (Remember Simen's module1)
 
-Q1-3. Go back to "ADH1C". Do you see any eQTL SNPs in "Significant Single-Tissue eQTLs for ADH1C"? What is the top eQTL SNP with the lowest P-value and which tissue is it? (You can sort the variants by clicking "p-value".)
+*Q1-3.* Go back to "ADH1C". Do you see any eQTL SNPs in "Significant Single-Tissue eQTLs for ADH1C"? What is the top eQTL SNP with the lowest P-value and which tissue is it? (You can sort the variants by clicking "p-value".)
 
 Open the "eQTL violin plot". Which genotype is associated with the higher expression of ADH1C? 
 
-Q1-4. Can we conclude that the eQTL (SNP-gene combination) in that tissue in Q1-3 is the most influential for ADH1C function biologically? If not, why?
+*Q1-4.* Can we conclude that the eQTL (SNP-gene combination) in that tissue in Q1-3 is the most influential for ADH1C function biologically? If not, why?
 
 <details>
   <summary> **Hint**</summary>      
@@ -69,13 +69,13 @@ For each gene, expression values were normalized across samples using an inverse
 </details> 
 
 
-Q1-5.  Search for "liver" in the "Significant Single-Tissue eQTLs for ADH1C". Let's take a look at the violin plot of the top variant, rs2173201. Which genotype is associated with the high expression of ADH1C? Can we conclude that the eQTL (SNP-gene combination) is the most influential for ADH1C function biologically? If not, why?
+*Q1-5.*  Search for "liver" in the "Significant Single-Tissue eQTLs for ADH1C". Let's take a look at the violin plot of the top variant, rs2173201. Which genotype is associated with the high expression of ADH1C? Can we conclude that the eQTL (SNP-gene combination) is the most influential for ADH1C function biologically? If not, why?
 
 
-Q1-6 
+*Q1-6.* 
 Go to [PheWAS](https://atlas.ctglab.nl/PheWAS) and enter the SNP ID above (rs2173201) to see if this variant is associated with any traits. What is the top traits with the lowest P-value? EA (effect allele) means allele increases the risk of the phenotype and NEA (non-effect allele) means other alleles. Which allele (nucleotide) is associated with the risk-increasing effect of the top trait?
 
-Q1-7 
+*Q1-7.* 
 Discuss how the lower expression of ADH1C (Alcohol Dehydrogenase 1C) is associated with higher alcohol intake (you don't have to submit it).
 
 [Reading material](https://pubs.niaaa.nih.gov/publications/aa72/aa72.htm)
@@ -89,17 +89,17 @@ Discuss how the lower expression of ADH1C (Alcohol Dehydrogenase 1C) is associat
 https://gtexportal.org/home/gene/ADH1C
 
 
-A1-1. ADH1C is highly expressed in liver, but also in colon and stomach.
+*A1-1.* ADH1C is highly expressed in liver, but also in colon and stomach.
 
-A1-2. ADH1A is mainly expressed in liver, while ADH1B is highly expressed in various tissues.
+*A1-2.* ADH1A is mainly expressed in liver, while ADH1B is highly expressed in various tissues.
 
-A1-3. chr4_99349450_C_T_b38	(rs283415), Adipose - Subcutaneous
+*A1-3.* chr4_99349450_C_T_b38	(rs283415), Adipose - Subcutaneous
 
-A1-4. TT is associated with the higher ADH1C expression in Adipose. However, The ADH1C expression in Adipose is much lower (Median TPM = 14.23) compared to liver (Median TPM = 273.7), and we cannot conclude that the eQTL in Adipose has the primary effect for ADH1C function. 
+*A1-4.* TT is associated with the higher ADH1C expression in Adipose. However, The ADH1C expression in Adipose is much lower (Median TPM = 14.23) compared to liver (Median TPM = 273.7), and we cannot conclude that the eQTL in Adipose has the primary effect for ADH1C function. 
 
-A1-5. AA genotype is associated with the higher ADH1C expression in liver. However, eQTL only indicates the statistical association between genotypes and gene expression, and this does not tell the biological mechanism regarding it.  
+*A1-5.* AA genotype is associated with the higher ADH1C expression in liver. However, eQTL only indicates the statistical association between genotypes and gene expression, and this does not tell the biological mechanism regarding it.  
 
-A1-6. C allele is associated with higher alcohol intake and higher Alcohol dependency risk.
+*A1-6.* C allele is associated with higher alcohol intake and higher Alcohol dependency risk.
 
 
 </details> 
