@@ -101,6 +101,13 @@ https://gtexportal.org/home/gene/ADH1C
 
 **A1-6.** C allele is associated with higher alcohol intake and higher Alcohol dependency risk.
 
+**A1-7.** Let's review the results so far.
+
+![](https://mariesaitou.github.io/Bio322/assets/Bio322.2022/function_genome3_a1-7.png)
+
+The C allele is associated with low expression of ADH1C and high alcohol consumption.
+One hypothesis: From the reading material, the high ADH activity tend to generate higher amount of Acetaldehyde from Ethanol, which may make that person feel sick/dissy. This makes that person uncomfortable, and make them refrain from heavy alcohol consumption.
+
 
 </details> 
 
