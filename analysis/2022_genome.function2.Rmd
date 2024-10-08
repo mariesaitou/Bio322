@@ -1,12 +1,11 @@
 ---
-title: "Genome Browser 2022"
+title: "GWAS"
 author: "Marie Saitou"
-date: "10/09/2022"
 output: html_document
 ---
 
 
-# Genome variation and function 2
+# Genome variation and function 
 
 Goal: Today, we learn about how to analyze genetic variants and its association with phenotype.
 
@@ -14,7 +13,7 @@ Goal: Today, we learn about how to analyze genetic variants and its association 
 
 (2) Genome wide association study - browse real data
 
-Relevant review papers if you want to further learn:
+Relevant review papers if you want to further learn...:
 
 [General](https://www.nature.com/articles/s41576-019-0127-1)
 
@@ -28,31 +27,14 @@ Depends on your interest:
 
 
 
-## 1. Lecture part 
-
-[PDF](https://github.com/mariesaitou/Bio322/blob/master/docs/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf)
 
 
-Prologue - Current topics in genomics 
-
-Human genome sequence 
-
-Nobel prize 2022
-
-We will learn about:
-
-Methods and significance of functional genomics
-
-Challenges of genomics
-
-
-
-## 2. Hands-on tasks
+##  Hands-on tasks
 
 
 Now, we will investigate real GWAS data at GWAS ATLAS, which concains 4,756 human GWAS across 3,302 traits.
 
-Let's explore the human GWAS database [GWAS ATLAS](https://atlas.ctglab.nl/). In the tutorial, I did not explain everything, so please explore it yourself and get familiarised with it.
+Let's explore the human GWAS database [GWAS ATLAS](https://atlas.ctglab.nl/). In the tutorial, I did not explain everything, so please explore it and get familiarised yourselfwith it.
 
 
 
@@ -145,4 +127,7 @@ A2-5. Put what you have discussed on CANVAS "Discussion" with the full names of 
 
 
 
+## Case study 3 (You have to submit only Case study 3)
+
+Go to "Browse GWAS" in the top, black bar. And search for a trait you like,and examine and inter the results.
 
