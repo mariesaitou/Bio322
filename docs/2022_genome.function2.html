@@ -11,11 +11,10 @@
 
 <meta name="author" content="Marie Saitou" />
 
-<meta name="date" content="2022-10-09" />
 
-<title>Genome Browser 2022</title>
+<title>GWAS</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -158,11 +157,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -191,8 +194,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -200,16 +203,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -348,7 +344,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/mariesaitou/Bio322">
-    <span class="fa fa-github"></span>
+    <span class="fab fa-github"></span>
      
     Source code
   </a>
@@ -362,9 +358,8 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Genome Browser 2022</h1>
+<h1 class="title toc-ignore">GWAS</h1>
 <h4 class="author">Marie Saitou</h4>
-<h4 class="date">10/09/2022</h4>
 
 </div>
 
@@ -393,7 +388,7 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2022-10-10
+<strong>Last updated:</strong> 2024-10-08
 </p>
 <p>
 <strong>Checks:</strong> <span
@@ -440,15 +435,15 @@ results.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree3d7a0e92d43b9d31e321ca77ce93b949fd5201d3targetblank3d7a0e9a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4d446e2c1b04f5ec4c1ea237310753e69f7e3917targetblank4d446e2a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/mariesaitou/Bio322/tree/3d7a0e92d43b9d31e321ca77ce93b949fd5201d3" target="_blank">3d7a0e9</a>
+<a href="https://github.com/mariesaitou/Bio322/tree/4d446e2c1b04f5ec4c1ea237310753e69f7e3917" target="_blank">4d446e2</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree3d7a0e92d43b9d31e321ca77ce93b949fd5201d3targetblank3d7a0e9a"
+id="strongRepositoryversionstrongahrefhttpsgithubcommariesaitouBio322tree4d446e2c1b04f5ec4c1ea237310753e69f7e3917targetblank4d446e2a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -458,7 +453,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/mariesaitou/Bio322/tree/3d7a0e92d43b9d31e321ca77ce93b949fd5201d3" target="_blank">3d7a0e9</a>.
+<a href="https://github.com/mariesaitou/Bio322/tree/4d446e2c1b04f5ec4c1ea237310753e69f7e3917" target="_blank">4d446e2</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -477,13 +472,13 @@ Ignored files:
     Ignored:    .RData
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-    Ignored:    analysis/.DS_Store
 
 Untracked files:
     Untracked:  210922_genome expression_epigenetics.pptx
     Untracked:  210927.module1.2.RNAseq_on_Galaxy.pdf
     Untracked:  220317_Advanced topics in genomics.docx
     Untracked:  220317_Advanced topics in genomics_MarieSai.docx
+    Untracked:  BIO322.question.docx
     Untracked:  BIO322_Teaching plan BIO322 2021.docx
     Untracked:  Bio322.09132021.pdf
     Untracked:  Bio322.09132021.pptx
@@ -561,6 +556,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/mariesaitou/Bio322/blob/4d446e2c1b04f5ec4c1ea237310753e69f7e3917/analysis/2022_genome.function2.Rmd" target="_blank">4d446e2</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2024-10-08
+</td>
+<td>
+wflow_publish("analysis/2022_genome.function2.Rmd")
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/mariesaitou/Bio322/bf4d4d281cf94e9d49c67f2a569fb3d88c77959c/docs/2022_genome.function2.html" target="_blank">bf4d4d2</a>
+</td>
+<td>
+mariesaitou
+</td>
+<td>
+2022-10-10
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -823,15 +852,15 @@ wflow_publish("analysis/2022_genome.function2.Rmd")
 </div>
 </div>
 </div>
-<div id="genome-variation-and-function-2" class="section level1">
-<h1>Genome variation and function 2</h1>
+<div id="genome-variation-and-function" class="section level1">
+<h1>Genome variation and function</h1>
 <p>Goal: Today, we learn about how to analyze genetic variants and its
 association with phenotype.</p>
 <ol style="list-style-type: decimal">
 <li><p>Genome wide association study - theory</p></li>
 <li><p>Genome wide association study - browse real data</p></li>
 </ol>
-<p>Relevant review papers if you want to further learn:</p>
+<p>Relevant review papers if you want to further learn…:</p>
 <p><a
 href="https://www.nature.com/articles/s41576-019-0127-1">General</a></p>
 <p>Depends on your interest:</p>
@@ -840,25 +869,14 @@ href="https://www.nature.com/articles/s41576-019-0127-1">General</a></p>
 href="https://www.nature.com/articles/s41576-018-0082-2">Animal</a></p>
 <p><a
 href="https://www.nature.com/articles/s41576-020-0227-y">Fish</a></p>
-<div id="lecture-part" class="section level2">
-<h2>1. Lecture part</h2>
-<p><a
-href="https://github.com/mariesaitou/Bio322/blob/master/docs/assets/Bio322.2022/bio322_2022/Bio322_module2_functional_genomics2.pdf">PDF</a></p>
-<p>Prologue - Current topics in genomics</p>
-<p>Human genome sequence</p>
-<p>Nobel prize 2022</p>
-<p>We will learn about:</p>
-<p>Methods and significance of functional genomics</p>
-<p>Challenges of genomics</p>
-</div>
 <div id="hands-on-tasks" class="section level2">
-<h2>2. Hands-on tasks</h2>
+<h2>Hands-on tasks</h2>
 <p>Now, we will investigate real GWAS data at GWAS ATLAS, which concains
 4,756 human GWAS across 3,302 traits.</p>
 <p>Let’s explore the human GWAS database <a
 href="https://atlas.ctglab.nl/">GWAS ATLAS</a>. In the tutorial, I did
-not explain everything, so please explore it yourself and get
-familiarised with it.</p>
+not explain everything, so please explore it and get familiarised
+yourselfwith it.</p>
 </div>
 <div id="case-study-1" class="section level2">
 <h2>Case study 1</h2>
@@ -943,6 +961,12 @@ value)</p>
 full names of participants who contributed to the discussion.</p>
 </details>
 </div>
+</div>
+<div id="case-study-3-you-have-to-submit-only-case-study-3"
+class="section level2">
+<h2>Case study 3 (You have to submit only Case study 3)</h2>
+<p>Go to “Browse GWAS” in the top, black bar. And search for a trait you
+like,and examine and inter the results.</p>
 </div>
 </div>
 
